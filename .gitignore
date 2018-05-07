@@ -1,5 +1,6 @@
 # ignore everything in the root except the "wp-content" directory.
 /*
+!/wp-config.php
 !wp-content/
 
 # ignore all files starting with .
