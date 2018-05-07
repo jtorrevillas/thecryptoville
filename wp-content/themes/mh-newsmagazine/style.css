@@ -1,0 +1,136 @@
+/*****
+Theme Name: MH NewsMagazine
+Theme URI: https://www.mhthemes.com/themes/mh/newsmagazine/
+Description: MH NewsMagazine can transform your blog into a modern online magazine or dynamic news website. This magazine theme is perfectly suitable for topics like politics, world news, economy and business news or anything else you can imagine. You can have the same layout in the premium version of MH Magazine (without the need of a child theme) which can be configured by making use of the flexible layout options. MH Magazine offers additional widget areas, multiple unique custom widgets, great features and extended layout options to manage several layout elements on your site including changing the color scheme and typography.
+Author: MH Themes
+Author URI: https://www.mhthemes.com/
+Template: mh-magazine-lite
+Version: 1.1.3
+Tags: one-column, two-columns, left-sidebar, right-sidebar, flexible-header, custom-background, custom-header, custom-menu, featured-images, full-width-template, theme-options, threaded-comments, translation-ready, rtl-language-support, blog, entertainment, news
+Text Domain: mh-newsmagazine
+Domain Path: /languages/
+License: GNU General Public License v2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*****/
+
+/***** Typography *****/
+
+body { font-family: "Sarala", sans-serif; }
+h1, h2, h3, h4, h5, h6, .mh-custom-posts-small-title { font-family: "Adamina", serif; }
+pre, code, kbd { background: #efefef; }
+blockquote { border-color: #005a8c; }
+a:hover { color: #005a8c; }
+
+/***** Header *****/
+
+.mh-header-tagline { color: #005a8c; }
+
+/***** Navigation *****/
+
+.mh-main-nav-wrap { background: #1f1e1e; }
+.mh-main-nav { background: #1f1e1e; border-bottom: none; }
+.mh-main-nav li:hover { background: #005a8c; }
+.mh-main-nav ul li:hover > ul { background: #1f1e1e; }
+.mh-main-nav .menu > .current-menu-item { background: none; }
+.mh-main-nav .menu > .current-menu-item:hover { background: #005a8c; }
+
+/***** SlickNav Custom Style *****/
+
+.slicknav_btn { background: #005a8c; }
+.slicknav_menu { border-color: #1f1e1e; background: #005a8c; }
+.slicknav_nav ul { border-color: #1f1e1e; }
+.slicknav_nav .slicknav_item:hover, .slicknav_nav a:hover { background: #005a8c; }
+.mh-main-nav-wrap .slicknav_btn, .mh-main-nav-wrap .slicknav_menu, .mh-main-nav-wrap .slicknav_nav .slicknav_item:hover, .mh-main-nav-wrap .slicknav_nav a:hover { background: transparent; }
+.mh-main-nav-wrap .slicknav_nav ul { border-color: #005a8c; }
+.mh-main-nav-wrap .slicknav_nav ul ul { border: none; }
+
+/***** Posts/Pages *****/
+
+.entry-content a, .entry-content a:hover, .mh-meta a:hover, .mh-footer .mh-meta a:hover { color: #005a8c; }
+.entry-tags li { background: #1f1e1e; }
+.entry-tags li:hover, .entry-tags .fa { background: #005a8c; }
+
+/***** Pagination *****/
+
+.page-numbers { background: #efefef; }
+.page-numbers:hover, .mh-loop-pagination .current, .mh-comments-pagination .current, a:hover .pagelink, .pagelink { background: #005a8c; }
+a .pagelink { background: #efefef; }
+
+/***** Footer *****/
+
+.mh-footer { background: #1f1e1e; }
+.mh-footer a { color: #efefef; }
+.mh-copyright-wrap { border-color: #555; background: #1f1e1e; }
+.mh-copyright, .mh-copyright a { color: #efefef; }
+
+/***** Gallery *****/
+
+.gallery-caption { color: #fff; }
+
+/***** Comments *****/
+
+.bypostauthor .mh-comment-meta-author:after, .mh-comment-meta-links .comment-reply-link:before, #respond #cancel-comment-reply-link:before { color: #005a8c; }
+
+/***** Forms *****/
+
+input[type=text]:hover, input[type=email]:hover, input[type=tel]:hover, input[type=url]:hover, textarea:hover { border-color: #005a8c; }
+input[type=submit] { background: #005a8c; }
+input[type=submit]:hover { background: #1f1e1e; }
+
+/***** Searchform *****/
+
+.mh-widget .search-form { background: #efefef; }
+
+/***** Widgets *****/
+
+.mh-widget-title-inner { display: inline-block; font-size: 13px; font-size: 0.8125rem; font-weight: 700; color: #fff; padding: 10px 15px; background: #005a8c; }
+.mh-widget-title-inner a { color: #fff; }
+.mh-widget-title { padding: 0; border-bottom: none; background: #005a8c; background: rgba(0, 90, 140, 0.6); }
+.mh-footer-widget-title { background: #005a8c; }
+
+/***** Widgets Areas (Advertising) *****/
+
+.mh-ad-spot, .mh-info-spot { background: #efefef; }
+
+/***** MH Slider Widget *****/
+
+.mh-slider-widget img { width: 100%; display: block; }
+.mh-slider-widget .flex-control-paging li a.flex-active { background: #005a8c; }
+.mh-slider-caption { border-color: #005a8c; background: #1f1e1e; background: rgba(31, 30, 30, 0.8); }
+.mh-widget-col-1 .mh-slider-caption { background: #1f1e1e; }
+.mh-footer-widget .mh-slider-caption { background: rgba(255, 255, 255, 0.1); }
+
+/***** MH Posts Stacked Widget *****/
+
+.mh-posts-stacked-title { background: #1f1e1e; background: rgba(31, 30, 30, 0.8); }
+.mh-posts-stacked-meta { background: #005a8c; }
+#mh-mobile .mh-footer-widget .mh-posts-stacked-overlay { border-color: #1f1e1e; }
+
+/***** MH Tabbed Widget *****/
+
+.mh-tabbed-widget a:hover { color: #005a8c; }
+.mh-tabbed-widget .tagcloud a { color: #fff; }
+.mh-tab-buttons { border-bottom: 3px solid #005a8c; }
+.mh-tab-button, .mh-tab-content { background: #efefef; }
+.mh-tab-button.active, .mh-tab-button.active:hover { color: #fff; background: #005a8c; }
+.mh-footer-widget .mh-tabbed-widget, .mh-footer-widget .mh-tabbed-widget a { color: #fff; }
+.mh-footer-widget .mh-tab-button.active { background: #005a8c; }
+.mh-footer-widget .mh-tab-comment-excerpt { background: #1f1e1e; }
+
+/***** WP Calendar Widget *****/
+
+#wp-calendar caption { background: #efefef; }
+
+/***** WP Tag Cloud Widget *****/
+
+.mh-widget .tagcloud a, .mh-footer-widget .tagcloud a { background: #1f1e1e; }
+.tagcloud a:hover, .mh-widget .tagcloud a:hover, .mh-footer-widget .tagcloud a:hover { background: #005a8c; }
+
+/***** Media Queries *****/
+
+@media screen and (max-width: 900px) {
+	#mh-mobile .mh-slider-caption { background: #1f1e1e; background: rgba(31, 30, 30, 1); }
+}
+@media only screen and (max-width: 420px) {
+	.mh-copyright-wrap { padding: 15px 20px; }
+}
