@@ -42,6 +42,8 @@ outline: none !important;
 
 <script type="text/javascript">
 	
+
+//-----Mike JS ----------------
 	jQuery(document).ready(function(){
   	
   jQuery('.autoplay').slick({
@@ -75,9 +77,6 @@ outline: none !important;
         slidesToScroll: 1
       }
     }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
   ]
  
 
@@ -85,6 +84,7 @@ outline: none !important;
 
 });
 
+//---------END ---------------------------------
 
 //--------Ariel JS-------------
   document.addEventListener("DOMContentLoaded", function(event) { 
@@ -136,7 +136,7 @@ outline: none !important;
             }       
         }
 
-        		jQuery(".btc").text(btc.symbol+" $"+parseFloat(btc.price_usd).toFixed(2));
+        jQuery(".btc").text(btc.symbol+" $"+parseFloat(btc.price_usd).toFixed(2));
 				jQuery(".btc-change").text((parseFloat(btc.percent_change_1h) >=0 ? '+' + btc.percent_change_1h  + '%': btc.percent_change_1h  + '%'));
 				jQuery(".btc-change").css('color',parseFloat(jQuery(".btc-change").text()) >= 0 ? 'green' : 'red');
 
