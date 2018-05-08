@@ -34,6 +34,7 @@ function mh_newsmagazine_theme_setup(){
 }
 add_action('after_setup_theme', 'mh_newsmagazine_theme_setup');
 
+<<<<<<< HEAD
 
 
 
@@ -58,3 +59,16 @@ add_shortcode( "btc_ticker","btc_ticker");
 
 
 ?>
+=======
+/***** Load Scripts *****/
+function load_price_index_mandatory_scripts() {
+	if(is_page_template('template-price-index.php')) {
+		$includes_url = includes_url();
+		echo "<script src='${includes_url}js/jquery/ui/core.min.js'></script>";
+		echo "<script src='${includes_url}js/jquery/ui/datepicker.min.js'></script>";
+	}
+}
+add_action('wp_head', 'load_price_index_mandatory_scripts');
+
+?>
+>>>>>>> 11c09e724077718313125c0ac5bee61c85ee5732

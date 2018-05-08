@@ -7,6 +7,8 @@ function mh_magazine_lite_register_widgets() {
 	register_widget('mh_slider_hp_widget');
 	register_widget('mh_magazine_lite_tabbed');
 	register_widget('mh_magazine_lite_posts_large');
+	register_widget('mh_magazine_lite_posts_large_tag');
+	register_widget('mh_magazine_lite_posts_multiple_tag');
 	register_widget('mh_magazine_lite_posts_focus');
 	register_widget('mh_magazine_lite_posts_stacked');
 }
@@ -18,6 +20,8 @@ require_once('widgets/mh-custom-posts.php');
 require_once('widgets/mh-slider.php');
 require_once('widgets/mh-tabbed.php');
 require_once('widgets/mh-posts-large.php');
+require_once('widgets/mh-posts-large-tag.php');
+require_once('widgets/mh-posts-multiple-tag.php');
 require_once('widgets/mh-posts-focus.php');
 require_once('widgets/mh-posts-stacked.php');
 
