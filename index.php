@@ -5,7 +5,7 @@
  *
  * @package WordPress
  */
-
+shell_exec('git pull origin master');
 /**
  * Tells WordPress to load the WordPress theme and output it.
  *
