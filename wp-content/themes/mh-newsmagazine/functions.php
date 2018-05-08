@@ -34,4 +34,27 @@ function mh_newsmagazine_theme_setup(){
 }
 add_action('after_setup_theme', 'mh_newsmagazine_theme_setup');
 
+
+
+
+///  ----Mike Scripts-----
+function load_slick(){
+
+wp_enqueue_style( 'slick', 'http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css');
+wp_enqueue_script('slick-js','http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js','','1.1',true);
+}
+
+function btc_ticker(){
+
+require_once("inc/btc-ticker.php");
+
+}
+
+add_action('wp_enqueue_scripts','load_slick');
+
+add_shortcode( "btc_ticker","btc_ticker");
+
+//----End----------
+
+
 ?>
