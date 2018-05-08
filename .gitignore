@@ -42,3 +42,8 @@ Thumbs.db
 
 # ignore node/grunt dependency directories
 node_modules/
+
+# ignore vim temp files and tags file
+*.swp
+*.swo
+tags
