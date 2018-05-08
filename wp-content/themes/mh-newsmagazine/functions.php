@@ -34,7 +34,7 @@ function mh_newsmagazine_theme_setup(){
 }
 add_action('after_setup_theme', 'mh_newsmagazine_theme_setup');
 
-<<<<<<< HEAD
+
 
 
 
@@ -58,8 +58,6 @@ add_shortcode( "btc_ticker","btc_ticker");
 //----End----------
 
 
-?>
-=======
 /***** Load Scripts *****/
 function load_price_index_mandatory_scripts() {
 	if(is_page_template('template-price-index.php')) {
@@ -71,4 +69,3 @@ function load_price_index_mandatory_scripts() {
 add_action('wp_head', 'load_price_index_mandatory_scripts');
 
 ?>
->>>>>>> 11c09e724077718313125c0ac5bee61c85ee5732
