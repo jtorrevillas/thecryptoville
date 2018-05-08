@@ -4,10 +4,22 @@
 outline: none !important;
 }
 
+.slick-prev{
+	display: none !important;
+}
+.slick-next{
+	display: none !important;
+}
+.slick-dots{
+
+	display:none !important;
+
+}
+
 </style>
 <div style="margin-top:5px;">
 		
-		<div style="float:left;width:220px;">
+		<div style="float:left;width:250px;">
 			
 			<label style="background:#005A8c;padding:8px 17px 8px 17px;font-size:13px;color:white;font-weight:600;">
 			LATEST CRYPTO PRICES  <i style="margin-left:10px;" class="fa fa-chevron-right"></i> 
@@ -33,14 +45,43 @@ outline: none !important;
 	jQuery(document).ready(function(){
   	
   jQuery('.autoplay').slick({
+  	 centerMode: true,
+  centerPadding: '0px',
   slidesToShow: 3,
-  slidesToScroll: 1,
+  slidesToScroll: 3,
   autoplay: true,
   autoplaySpeed: 2000,
-});
+    responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+ 
 
-jQuery(".slick-prev").css('display','none');
-jQuery(".slick-next").css('display','none');
+});
 
 });
 
