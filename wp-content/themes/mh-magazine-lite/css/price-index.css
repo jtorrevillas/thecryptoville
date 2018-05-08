@@ -1,0 +1,235 @@
+/*
+ * Price Index Page Template Custom Style
+ */
+
+#sidebar-price-index .related-news-item div.details {
+	padding: 8px 12px;
+	margin-bottom: 32px;
+}
+
+#sidebar-price-index .related-news-item div.details div {
+	text-align: left;
+	padding: 0;
+	font-size: 12px;
+	font-weight: 100;
+	color: #8b8b8b;
+    width: 50%;
+    display: inline-block;
+    float: left;
+}
+
+#sidebar-price-index .related-news-item div.details div strong {
+	color: #000;
+}
+
+#sidebar-price-index .related-news-item div.stats {
+	margin-top: 12px;
+	color: #8b8b8b;
+	font-size: 12px;
+  font-weight: 400;
+}
+
+#sidebar-price-index .related-news-item div.stats i {
+	margin-right: 2px;
+}
+
+#sidebar-price-index .related-news-item div.stats i:first-child + span {
+	margin-right: 10px;
+}
+
+#sidebar-price-index .related-news-item {
+	margin-bottom: 52px;
+}
+
+#sidebar-price-index .related-news-item .rn-item-title {
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 1.78;
+	text-align: left;
+	display: block;
+	color: #000;
+	width: 100%;
+	margin-top: 12px;
+}
+
+#histoweek .histoweek-title,
+.cryptocurrency-converter .crypto-converter-title,
+#sidebar-price-index div.related-price-news {
+	background: rgba(255,132,0,.7);
+    padding: 0;
+    border-bottom: none;
+    margin-bottom: 1.25rem;
+    text-transform: uppercase;
+}
+
+#histoweek .histoweek-title,
+.cryptocurrency-converter .crypto-converter-title {
+	margin-bottom: 0;
+}
+
+#histoweek {
+	margin-top: 1.25rem;
+}
+
+.cryptocurrency-converter {
+    margin-bottom: 1.25rem;
+}
+
+#histoweek .histoweek-title h1,
+.cryptocurrency-converter .crypto-converter-title h1,
+#sidebar-price-index div.related-price-news h1 {
+	background: #ff8400;
+    transition: all .2s ease;
+    display: inline-block;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    color: #fff;
+    padding: 10px 15px;
+}
+
+div.tabLinksCointainer a.active > div {
+	background-color: #ECEFF1 !important;
+	box-shadow: 6px 1px 13px -5px rgba(0,0,0,0.2);
+}
+
+div.tabLinksCointainer a > div {
+	display: block;
+	cursor: pointer;
+	float: left;
+	color: #000 !important;
+	border-radius: 0px;
+	background-color: transparent !important;
+	font-weight: bold !important;
+	font-size: 11px;
+	padding: 12px 28px;
+}
+
+div.currency-selection {
+	overflow: auto;
+}
+
+div.currency-selection .nav-pills>li {
+	cursor: pointer;
+	float: left;
+    line-height: 42px;
+}
+
+div.currency-selection .nav-pills>li+li {
+	margin: 0;
+}
+
+div.currency-selection .nav a {
+	color: #000 !important;
+	border-radius: 0px;
+	background-color: transparent !important;
+	font-weight: bold !important;
+	font-size: 11px;
+	padding: 12px 28px;
+}
+
+div.currency-selection .nav li.active a {
+	background-color: #ECEFF1 !important;
+	box-shadow: 6px 1px 13px -5px rgba(0,0,0,0.2);
+}
+
+h2#crypto_lastpriceH {
+	font-weight: 400;
+	font-size: 40px;
+	margin-bottom: 0px;
+	line-height: 60px;
+	white-space: nowrap;
+}
+
+div.main-summary {
+	margin-top: 40px !important;
+}
+
+div.main-summary .highlight label {
+	color: rgb(70, 90, 101);
+	font-weight: 100;
+	text-align: left;
+	line-height: 31px;
+	font-size: 16px;
+}
+
+div.main-summary .highlight span {
+	font-weight: 100 !important;
+	line-height: 14px;
+	font-size: 16px !important;
+}
+
+div.main-summary .highlight span.negative {
+	color: rgb(207, 89, 111);
+}
+
+div.main-summary .highlight span.positive {
+	color: rgb(15, 199, 62);
+}
+
+div.main-summary .highlight span.positive:before {
+	content: '+ ';
+}
+
+div.main-summary .highlight span.negative:before {
+	content: '- ';
+}
+
+div.price-index-summary-column {
+	margin-bottom: 20px;
+}
+
+div.price-index-summary-column .other-summary {
+	margin-top: 20px;
+	display: flex;
+    width: 100%;
+}
+
+div.price-index-summary-column .other-summary div.col-md-4 {
+	flex: 1;
+}
+
+div.price-index-summary-column .col-md-4 {
+	padding: 0px 2%	20px;
+}
+
+div.price-index-summary-column .col-md-4:nth-child(2) {
+  border-left: 1px solid #AFBDC4;
+	border-right: 1px solid #AFBDC4;
+}
+
+div.price-index-summary-column .col-md-4 .field {
+	padding: 5px 8px 0px 8px;
+}
+
+div.price-index-summary-column .col-md-4 span {
+	font-size: 12px;
+	font-weight: 700;
+	padding: 10px;
+	white-space: nowrap;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+div.price-index-summary-column .col-md-4 .field label {
+	font-size: 12px;
+	font-weight: 200;
+  padding: 10px;
+  white-space: nowrap;
+  color: #253137;
+	display: inline-block;
+	vertical-align: middle;
+	margin-bottom: 5px !important;
+}
+
+div.price-index-summary-column .col-md-4 .field:nth-child(even) {
+	background: rgba(245,166,35,0.1);
+}
+
+div.price-index-summary-column {
+	background: rgb(255, 255, 255);
+	border: 0px solid rgb(224, 230, 239);
+	padding: 16px;
+	border-radius: 0px;
+	color: rgb(0, 0, 0);
+	box-shadow: rgb(221, 221, 221) 0px 0px 10px;
+}

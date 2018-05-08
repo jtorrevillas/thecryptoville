@@ -1197,7 +1197,8 @@ var embedableInfo   = document.createElement("div");
 
 var chartTypeTabs	= document.createElement("div");
 chartTypeTabs.innerHTML = '<div class="chartTypeTabLinks cTypeTabActive" onclick="cccChangeChartType(event, \'line\')">LINE</div><div class="chartTypeTabLinks" onclick="cccChangeChartType(event, \'candle\')">CANDLE</div><div class="chartTypeTabLinks" onclick="cccChangeChartType(event, \'ohlc\')">OHLC</div>';
-chartTypeTabs.style.overflow = 'auto';
+chartTypeTabs.style.overflow = 'hidden';
+chartTypeTabs.style.height = '40px';
 
 window.cccChangeChartType = function (event, type){
 if (!cccupdating) {
@@ -1224,11 +1225,11 @@ cccUpdateChart();
 };
 
 
-cccCreateCSSSelector('.chartTypeTabLinks', 'font-size: 10px; width:120px; height:40px; text-align:center; padding-top:13px; color: black; background-color: #ECEFF1;  margin-right: 1px; font-weight: 600; cursor: pointer; float: left;');
+cccCreateCSSSelector('.chartTypeTabLinks', 'color: #FFF; letter-spacing: 1px; font-size: 14px; width:120px; height:30px; text-align:center; padding-top:10px; background-color: rgba(255,132,0,.7);  margin-right: 1px; font-weight: 600; cursor: pointer; float: left;');
 cccCreateCSSSelector('@media (max-width: 767px)', '.chartTypeTabLinks {width:80px;}');
 
 //cccCreateCSSSelector('.chartTypeTabLinks:hover', 'background:' + cccCurrentTheme.Tabs.activeBorderColor);
-cccCreateCSSSelector('.cTypeTabActive', 'background-color: #FABF2C; box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);');
+cccCreateCSSSelector('.cTypeTabActive', 'background-color: #ff8400; box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);');
 
 embedable.appendChild(chartTypeTabs);
 

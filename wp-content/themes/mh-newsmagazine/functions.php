@@ -40,6 +40,7 @@ function load_price_index_mandatory_scripts() {
 		$includes_url = includes_url();
 		echo "<script src='${includes_url}js/jquery/ui/core.min.js'></script>";
 		echo "<script src='${includes_url}js/jquery/ui/datepicker.min.js'></script>";
+		wp_enqueue_style('price-index', get_template_directory_uri() . '/css/price-index.css');
 	}
 }
 add_action('wp_head', 'load_price_index_mandatory_scripts');
