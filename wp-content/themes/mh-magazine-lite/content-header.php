@@ -9,3 +9,5 @@
 		</nav>
 	</div>
 </header>
+
+<?php echo do_shortcode('[btc_ticker]'); ?>
