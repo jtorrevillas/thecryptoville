@@ -188,7 +188,7 @@ class WPP_Output {
         $post_comments = $this->get_comments( $post_object );
 
         // Post meta
-        $post_meta = join( ' | ', $this->get_metadata( $post_object ) );
+        $post_meta = join( ' ', $this->get_metadata( $post_object ) );
 
         // Build custom HTML output
         if ( $this->options['markup']['custom_html'] ) {
@@ -246,8 +246,8 @@ class WPP_Output {
                 "<li" . ( ( is_array( $wpp_post_class ) && !empty( $wpp_post_class ) ) ? ' class="' . esc_attr( implode( " ", $wpp_post_class ) ) . '"' : '' ) . ">\n"
                 . $post_thumbnail
                 . "<a " . ( $is_single == $postID ? '' : "href=\"{$permalink}\"" ) . " title=\"{$post_title_attr}\" class=\"wpp-post-title\" target=\"{$this->admin_options['tools']['link']['target']}\">{$post_title}</a>\n"
-                . $post_excerpt
                 . $post_meta
+                . $post_excerpt
                 . $post_rating
                 . "</li>\n";
 
@@ -718,7 +718,7 @@ class WPP_Output {
             $comments = $this->get_comments( $post_object );
 
             $comments_text = sprintf(
-                _n( '1 comment', '%s comments', $comments, 'wordpress-popular-posts' ),
+                _n( '1', '%s', $comments, 'wordpress-popular-posts' ),
                 number_format_i18n( $comments )
             );
 
@@ -744,16 +744,22 @@ class WPP_Output {
 
         }
 
+        // date
+        if ( $this->options['stats_tag']['date']['active'] ) {
+            $date = $this->get_date( $post_object );
+            $stats[] = '<span class="wpp-date"><i class="fa fa-clock-o"></i> ' . ( 'relative' == $this->options['stats_tag']['date']['format'] ? sprintf(__('%s', 'wordpress-popular-posts'), $date) : sprintf(__('%s', 'wordpress-popular-posts'), $date) ) . '</span>';
+        }
+
         if ( "comments" == $this->options['order_by'] ) {
             if ( $this->options['stats_tag']['comment_count'] )
-                $stats[] = '<span class="wpp-comments">' . $comments_text . '</span>'; // First comments count
+                $stats[] = '<span class="wpp-comments"><i class="fa fa-comment-o"></i> <a class="mh-comment-count-link" href="'. $this->get_permalink($post_object) .'#mh-comments">' . $comments_text . '</a></span>'; // First comments count
             if ( $this->options['stats_tag']['views'] )
                 $stats[] = '<span class="wpp-views">' . $views_text . "</span>"; // ... then views
         } else {
             if ( $this->options['stats_tag']['views'] )
                 $stats[] = '<span class="wpp-views">' . $views_text . "</span>"; // First views count
             if ( $this->options['stats_tag']['comment_count'] )
-                $stats[] = '<span class="wpp-comments">' . $comments_text . '</span>'; // ... then comments
+                $stats[] = '<span class="wpp-comments"><i class="fa fa-comment-o"></i> <a class="mh-comment-count-link" href="' . $this->get_permalink($post_object) . '#mh-comments">' . $comments_text . '</a></span>'; // ... then comments
         }
 
         // author
@@ -761,12 +767,6 @@ class WPP_Output {
             $author = $this->get_author( $post_object );
             $display_name = '<a href="' . get_author_posts_url( $post_object->uid ) . '">' . $author . '</a>';
             $stats[] = '<span class="wpp-author">' . sprintf(__('by %s', 'wordpress-popular-posts'), $display_name).'</span>';
-        }
-
-        // date
-        if ( $this->options['stats_tag']['date']['active'] ) {
-            $date = $this->get_date( $post_object );
-            $stats[] = '<span class="wpp-date">' . ( 'relative' == $this->options['stats_tag']['date']['format'] ? sprintf(__('posted %s', 'wordpress-popular-posts'), $date) : sprintf(__('posted on %s', 'wordpress-popular-posts'), $date) ) . '</span>';
         }
 
         // taxonomy

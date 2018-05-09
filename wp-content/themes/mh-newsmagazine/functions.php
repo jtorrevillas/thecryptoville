@@ -75,4 +75,14 @@ function load_nav_script() {
 }
 add_action( 'wp_enqueue_scripts', 'load_nav_script' );
 
+
+
+function mg_news_pagination_rewrite() {
+  add_rewrite_rule(get_option('category_base').'/page/?([0-9]{1,})/?$', 'index.php?pagename='.get_option('category_base').'&amp;paged=$matches[1]', 'top');
+}
+add_action('init', 'mg_news_pagination_rewrite');
+
+
 ?>
+
+

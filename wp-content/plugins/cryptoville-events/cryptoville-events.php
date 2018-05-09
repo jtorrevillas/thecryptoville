@@ -61,47 +61,9 @@ function cryptoville_events_load_contents(){
 					$time = concat_date($from,$to);
 					
 
-					if(has_term('bitcoin_events','etype_tax')){
-						$btc.='<div style="margin-bottom:10px;margin-top:15px;"><a href="'.$eurl.'"><h4>'.get_the_title().'</h4></a></div>
-						<div style="display: inline-block; color: black; font-weight:600;">'.$time.'</div> <div style="display: inline-block;font-weight: 800;">|</div> <div style="display: inline-block; font-weight:600;">'.$add.'</div>
-						<div style="width: 100%; padding-top:15px;">
-						
-								'.get_the_content().'
-						
-						</div>
-						<hr>';
-					}else if(has_term('financial_events','etype_tax')){
-						$fin = '<div style="margin-bottom:10px;margin-top:15px;"><a href="'.$eurl.'"><h4>'.get_the_title().'</h4></a></div>
-						<div style="display: inline-block; color: black; font-weight:600;">'.$time.'</div> <div style="display: inline-block;font-weight: 800;">|</div> <div style="display: inline-block; font-weight:600;">'.$add.'</div>
-						<div style="width: 100%; padding-top:15px;">
-						
-								'.get_the_content().'
-						
-						</div>
-						<hr>';
-					}else if(has_term('technology_events','etype_tax')){
-						$tech = '<div style="margin-bottom:10px;margin-top:15px;"><a href="'.$eurl.'"><h4>'.get_the_title().'</h4></a></div>
-						<div style="display: inline-block; color: black; font-weight:600;">'.$time.'</div> <div style="display: inline-block;font-weight: 800;">|</div> <div style="display: inline-block; font-weight:600;">'.$add.'</div>
-						<div style="width: 100%; padding-top:15px;">
-						
-								'.get_the_content().'
-						
-						</div>
-						<hr>';
-					}
-
-					$all.='
-						<div style="margin-bottom:10px;margin-top:15px;"><a href="'.$eurl.'"><h4>'.get_the_title().'</h4></a></div>
-						<div style="display: inline-block; color: black; font-weight:600;">'.$time.'</div> <div style="display: inline-block;font-weight: 800;">|</div> <div style="display: inline-block; font-weight:600;">'.$add.'</div>
-						<div style="width: 100%; padding-top:15px;">
-						
-								'.get_the_content().'
-						
-						</div>
-						<hr>';
 					if(has_term('featured_events','etype_tax')){
 						$tempo .= '
-						<div class="col-lg-12" style="background-color: white;padding-top:10px;box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);margin-top: 15px;">
+						<div class="col-lg-12" style="background-color: white;padding:15px;box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);margin-top: 15px;">
 							<div class="col-lg-4" >
 								<img class="vc_img-placeholder vc_single_image-img" src="'.get_the_post_thumbnail_url().'" />
 							</div>
@@ -119,25 +81,63 @@ function cryptoville_events_load_contents(){
 						</div><hr>
 						';
 					}
-	                 ?>
 
-	            <?php
+
+					$all.='
+						<div style="margin-bottom:10px;margin-top:15px;"><a href="'.$eurl.'"><h4>'.get_the_title().'</h4></a></div>
+						<div style="display: inline-block; color: black; font-weight:600;">'.$time.'</div> <div style="display: inline-block;font-weight: 800;">|</div> <div style="display: inline-block; font-weight:600;">'.$add.'</div>
+						<div style="width: 100%; padding-top:15px;">
+						
+								'.get_the_content().'
+						
+						</div>
+						<hr>';
+
+
+					if(has_term('bitcoin_events','etype_tax')){
+						$btc.='<div style="margin-bottom:10px;margin-top:15px;"><a href="'.$eurl.'"><h4>'.get_the_title().'</h4></a></div>
+						<div style="display: inline-block; color: black; font-weight:600;">'.$time.'</div> <div style="display: inline-block;font-weight: 800;">|</div> <div style="display: inline-block; font-weight:600;">'.$add.'</div>
+						<div style="width: 100%; padding-top:15px;">
+						
+								'.get_the_content().'
+						
+						</div>
+						<hr>';
+					}
+					if(has_term('financial_events','etype_tax')){
+						$fin .= '<div style="margin-bottom:10px;margin-top:15px;"><a href="'.$eurl.'"><h4>'.get_the_title().'</h4></a></div>
+						<div style="display: inline-block; color: black; font-weight:600;">'.$time.'</div> <div style="display: inline-block;font-weight: 800;">|</div> <div style="display: inline-block; font-weight:600;">'.$add.'</div>
+						<div style="width: 100%; padding-top:15px;">
+						
+								'.get_the_content().'
+						
+						</div>
+						<hr>';
+					}
+
+					if(has_term('technology_events','etype_tax')){
+						$tech .= '<div style="margin-bottom:10px;margin-top:15px;"><a href="'.$eurl.'"><h4>'.get_the_title().'</h4></a></div>
+						<div style="display: inline-block; color: black; font-weight:600;">'.$time.'</div> <div style="display: inline-block;font-weight: 800;">|</div> <div style="display: inline-block; font-weight:600;">'.$add.'</div>
+						<div style="width: 100%; padding-top:15px;">
+						
+								'.get_the_content().'
+						
+						</div>
+						<hr>';
+					}
+
 	            endwhile;
 	            wp_reset_postdata();
 
-
-
-	    endif;
-
-	     $tempo.='
+	            $tempo.='
 <div class="col-lg-12" style="margin:20px 0 0 0;padding:0;">
 	<div class="col-lg-8" style="padding:0;">
 		<div style="border:none;padding-left:0;" id="tabs">
 		  <ul style="background:none;border:none;">
-		    <li style="font-size:18px;border:none;"><a style="padding-left:0;" href="#tabs-1">All</a></li>
-		    <li style="font-size:18px;border:none;"><a style="padding-left:0;" href="#tabs-2">Bitcoin Events</a></li>
-		    <li style="font-size:18px;border:none;"><a style="padding-left:0;" href="#tabs-3">Financial Events</a></li>
-		    <li style="font-size:18px;border:none;"><a style="padding-left:0;" href="#tabs-4">Technology Events</a></li>
+		    <li style="font-size:18px;border:none;"><a style="font-weight:300;" href="#tabs-1">All</a></li>
+		    <li style="font-size:18px;border:none;"><a style="font-weight:300;" href="#tabs-2">Bitcoin Events</a></li>
+		    <li style="font-size:18px;border:none;"><a style="font-weight:300;" href="#tabs-3">Financial Events</a></li>
+		    <li style="font-size:18px;border:none;"><a style="font-weight:300;" href="#tabs-4">Technology Events</a></li>
 		  </ul>
 		  <div style="padding-left:0;" id="tabs-1">
 		    '.$all.'
@@ -157,6 +157,10 @@ function cryptoville_events_load_contents(){
 	</div>
 </div>
 	     ';
+
+	    endif;
+
+	     
 	    return $tempo;
 	endif;
 }

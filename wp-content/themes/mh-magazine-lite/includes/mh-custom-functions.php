@@ -338,7 +338,7 @@ if (!function_exists('mh_magazine_lite_footer_widgets')) {
 	function mh_magazine_lite_footer_widgets() {
 		$footer_1 = ''; $footer_2 = ''; $footer_3 = ''; $footer_4 = ''; $footer_class = ''; $footer_columns = 0;
 		if (is_active_sidebar('footer-1')) {
-			$footer_1 = 1; $footer_columns++;
+			$footer_1 = 4; $footer_columns++;
 		}
 		if (is_active_sidebar('footer-2')) {
 			$footer_2 = 1; $footer_columns++;
@@ -356,7 +356,7 @@ if (!function_exists('mh_magazine_lite_footer_widgets')) {
 		} elseif ($footer_columns === 2) {
 			$footer_class = 'mh-col-1-2 mh-widget-col-2 mh-footer-2-cols ';
 		} else {
-			$footer_class = 'mh-col-1-1 mh-home-wide ';
+			$footer_class = 'mh-col-1-4 mh-home-wide ';
 		}
 		if ($footer_1 || $footer_2 || $footer_3 || $footer_4) {
 			echo '<footer class="mh-footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter">' . "\n";
