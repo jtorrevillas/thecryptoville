@@ -1,5 +1,5 @@
 <?php
-
+show_admin_bar(false);
 /***** Fetch Theme Data & Options *****/
 
 $mh_magazine_lite_data = wp_get_theme('mh-magazine-lite');

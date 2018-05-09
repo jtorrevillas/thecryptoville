@@ -1,7 +1,7 @@
 <?php /* Template for displaying content of MH Posts Large widget */ ?>
 <article class="post-<?php the_ID(); ?> mh-posts-large-item multiple-tag">
 	<figure class="mh-posts-large-thumb">
-		<span class="display-tag"><?php the_tags('');?></span>
+		<span class="display-tag"><?php the_category('');?></span>
 		<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php
 			if (has_post_thumbnail()) {
 				the_post_thumbnail('mh-magazine-lite-content');
