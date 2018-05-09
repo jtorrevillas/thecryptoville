@@ -14,6 +14,7 @@ outline: none !important;
   padding-top:3px;
   background:white;
   z-index: -1;
+    padding:8px 17px 8px 17px;
 }
 
 .crpyto-prices-label{

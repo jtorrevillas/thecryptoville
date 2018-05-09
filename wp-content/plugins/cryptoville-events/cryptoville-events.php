@@ -101,7 +101,7 @@ function cryptoville_events_load_contents(){
 						<hr>';
 					if(has_term('featured_events','etype_tax')){
 						$tempo .= '
-						<div class="col-lg-12" style="background-color: white;padding-top:10px;box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);margin-top: 15px;">
+						<div class="col-lg-12" style="background-color: white;padding:15px;box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);margin-top: 15px;">
 							<div class="col-lg-4" >
 								<img class="vc_img-placeholder vc_single_image-img" src="'.get_the_post_thumbnail_url().'" />
 							</div>
@@ -134,10 +134,10 @@ function cryptoville_events_load_contents(){
 	<div class="col-lg-8" style="padding:0;">
 		<div style="border:none;padding-left:0;" id="tabs">
 		  <ul style="background:none;border:none;">
-		    <li style="font-size:18px;border:none;"><a style="padding-left:0;" href="#tabs-1">All</a></li>
-		    <li style="font-size:18px;border:none;"><a style="padding-left:0;" href="#tabs-2">Bitcoin Events</a></li>
-		    <li style="font-size:18px;border:none;"><a style="padding-left:0;" href="#tabs-3">Financial Events</a></li>
-		    <li style="font-size:18px;border:none;"><a style="padding-left:0;" href="#tabs-4">Technology Events</a></li>
+		    <li style="font-size:18px;border:none;"><a style="font-weight:300;" href="#tabs-1">All</a></li>
+		    <li style="font-size:18px;border:none;"><a style="font-weight:300;" href="#tabs-2">Bitcoin Events</a></li>
+		    <li style="font-size:18px;border:none;"><a style="font-weight:300;" href="#tabs-3">Financial Events</a></li>
+		    <li style="font-size:18px;border:none;"><a style="font-weight:300;" href="#tabs-4">Technology Events</a></li>
 		  </ul>
 		  <div style="padding-left:0;" id="tabs-1">
 		    '.$all.'
