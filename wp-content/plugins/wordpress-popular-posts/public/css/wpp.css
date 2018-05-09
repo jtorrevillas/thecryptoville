@@ -23,7 +23,6 @@ Use the following classes to style your popular posts list as you like.
 		float: none;
 		clear: both;
 		margin: 10px 0;
-		height: 100px;
 	}
 	
 	.wpp-list li:nth-child(2){
