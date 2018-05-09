@@ -94,7 +94,7 @@ cccCreateCSSSelector('div.histoRow .positive', 'color: ' + cccCurrentTheme.Rows.
 cccCreateCSSSelector('div.histoRow .positive:before', 'content: \'+\'');
 cccCreateCSSSelector('div.histoRow .negative', 'color: ' + cccCurrentTheme.Rows.downColor);
 cccCreateCSSSelector('div.histoRow .negative:before', 'content: \'-\'');
-embedablePriceInfo.innerHTML = `<div class="histoTitle">Historical Price and Volume</div>
+embedablePriceInfo.innerHTML = `<div class="histoTitle"></div>
 <style type="text/css">
 
     .histoRow  {

@@ -34,12 +34,37 @@ function mh_newsmagazine_theme_setup(){
 }
 add_action('after_setup_theme', 'mh_newsmagazine_theme_setup');
 
+
+
+
+
+///  ----Mike Scripts-----
+function load_slick(){
+
+wp_enqueue_style( 'slick', 'http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css');
+wp_enqueue_script('slick-js','http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js','','1.1',true);
+}
+
+function btc_ticker(){
+
+require_once("inc/btc-ticker.php");
+
+}
+
+add_action('wp_enqueue_scripts','load_slick');
+
+add_shortcode( "btc_ticker","btc_ticker");
+
+//----End----------
+
+
 /***** Load Scripts *****/
 function load_price_index_mandatory_scripts() {
 	if(is_page_template('template-price-index.php')) {
 		$includes_url = includes_url();
 		echo "<script src='${includes_url}js/jquery/ui/core.min.js'></script>";
 		echo "<script src='${includes_url}js/jquery/ui/datepicker.min.js'></script>";
+		wp_enqueue_style('price-index', get_template_directory_uri() . '/css/price-index.css');
 	}
 }
 add_action('wp_head', 'load_price_index_mandatory_scripts');

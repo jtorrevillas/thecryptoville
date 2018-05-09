@@ -136,17 +136,13 @@ input[type=submit]:hover { background: #1f1e1e; }
 }
 
 /** jeevon **/
-/* 1431px */
 .mh-main-nav .sub-menu {
-	/* width: 1431px;
-	background-color: #d2d2d2; */
 	display:none!important;
 }
 
 .mh-dp-menu {
 	width: 100%;
 	background-color: #d2d2d2;
-	height: 38px;
 }
 
 .mh-dp-menu li {
@@ -154,6 +150,25 @@ input[type=submit]:hover { background: #1f1e1e; }
 	padding: 8px 12px;
 }
 
+.mh-dp-menu ul {
+	display: none;
+}
+
+.mh-dp-menu ul.active {
+	display: block;
+}
+
 .mh-dp-menu li a {
 	font-size: 12px;
+}
+
+.mh-dp-menu li a:hover {
+	color: #dd7200;
+	background: none!important;
+}
+
+@media only screen and (max-width: 767px) {
+	.mh-dp-menu {
+		display: none!important;
+	}
 }
