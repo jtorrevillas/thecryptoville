@@ -13,7 +13,7 @@ outline: none !important;
   padding: 0;
   padding-top:3px;
   background:white;
-  z-index: -1;
+  z-index: 0;
     padding:8px 17px 8px 17px;
 }
 
@@ -25,6 +25,8 @@ outline: none !important;
   font-size:13px;
   color:white;
   font-weight:600;
+  position: relative;
+  z-index: 1;
 }
 
 
