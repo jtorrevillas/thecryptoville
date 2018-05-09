@@ -134,3 +134,26 @@ input[type=submit]:hover { background: #1f1e1e; }
 @media only screen and (max-width: 420px) {
 	.mh-copyright-wrap { padding: 15px 20px; }
 }
+
+/** jeevon **/
+/* 1431px */
+.mh-main-nav .sub-menu {
+	/* width: 1431px;
+	background-color: #d2d2d2; */
+	display:none!important;
+}
+
+.mh-dp-menu {
+	width: 100%;
+	background-color: #d2d2d2;
+	height: 38px;
+}
+
+.mh-dp-menu li {
+	display: inline-block;
+	padding: 8px 12px;
+}
+
+.mh-dp-menu li a {
+	font-size: 12px;
+}

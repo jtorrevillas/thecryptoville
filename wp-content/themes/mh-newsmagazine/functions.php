@@ -44,4 +44,10 @@ function load_price_index_mandatory_scripts() {
 }
 add_action('wp_head', 'load_price_index_mandatory_scripts');
 
+// nav script
+function load_nav_script() {
+    wp_enqueue_script( 'nav-script', get_template_directory_uri() . '/js/nav.js' );
+}
+add_action( 'wp_enqueue_scripts', 'load_nav_script' );
+
 ?>

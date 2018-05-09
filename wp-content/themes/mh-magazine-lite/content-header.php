@@ -8,4 +8,6 @@
 			<?php wp_nav_menu(array('theme_location' => 'main_nav')); ?>
 		</nav>
 	</div>
+	<div class="mh-dp-menu">
+	</div>
 </header>
