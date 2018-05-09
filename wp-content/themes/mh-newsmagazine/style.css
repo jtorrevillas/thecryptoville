@@ -143,6 +143,7 @@ input[type=submit]:hover { background: #1f1e1e; }
 .mh-dp-menu {
 	width: 100%;
 	background-color: #d2d2d2;
+	min-height: 38px;
 }
 
 .mh-dp-menu li {
