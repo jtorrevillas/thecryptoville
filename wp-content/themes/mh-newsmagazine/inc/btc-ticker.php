@@ -16,12 +16,26 @@ outline: none !important;
 
 }
 
+
+@media screen and (max-width: 450px) {
+
+.crpyto-prices-label{
+  display: none;
+}
+
+.autoplay{
+  text-align: center !important;
+}
+
+
+}
+
 </style>
 <div style="margin-top:5px;">
 		
 		<div style="float:left;width:250px;">
 			
-			<label style="background:#005A8c;padding:8px 17px 8px 17px;font-size:13px;color:white;font-weight:600;">
+			<label class="crpyto-prices-label" style="background:#005A8c;padding:8px 17px 8px 17px;font-size:13px;color:white;font-weight:600;">
 			LATEST CRYPTO PRICES  <i style="margin-left:10px;" class="fa fa-chevron-right"></i> 
 			</label>
 
