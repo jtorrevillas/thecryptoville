@@ -168,6 +168,49 @@ input[type=submit]:hover { background: #1f1e1e; }
 	background: none!important;
 }
 
+footer #menu-header-menu-1 {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.mh-footer-2 {
+	margin-left:1.5%;
+}
+
+footer #menu-header-menu-1>li {
+	width: 23%;
+	padding: 0 7px;
+	margin-bottom: 20px;
+}
+/* footer #menu-header-menu-1>li:last-child {
+	width: 25%;
+	padding: 0 12px;
+	margin-bottom: 20px;
+} */
+
+footer #menu-header-menu-1 > li > a {
+	background: #ff8400;
+	font-size: 1rem;
+	display: block;
+	padding: 10px 15px;
+	line-height: 1;
+	text-transform: uppercase;
+}
+
+footer #menu-header-menu-1 > li:first-child {
+	display: none!important;
+}
+
+footer #menu-header-menu-1 > li > ul {
+	/* padding-left: 10px; */
+	margin-top: 10px;
+}
+
+footer #menu-header-menu-1 > li li {
+	padding: 3px 0px;
+	border-bottom: #fff 1px dotted;
+}
+
 @media only screen and (max-width: 767px) {
 	.mh-dp-menu {
 		display: none!important;
