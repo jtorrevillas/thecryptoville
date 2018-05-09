@@ -11,7 +11,7 @@ $symbols = array(
 		'symbol' => 'BTC',
 		'currencies' => ['USD','EUR','GBP','JPY','RUR'],
 		'sidebar_news_title' => 'Bitcoin Price News',
-		'post_tag' => 'bitcoin-price'
+		'post_tag' => 'bitcoin'
 	),
 	12 => array(
 		'symbol' => 'BCH',
@@ -23,7 +23,7 @@ $symbols = array(
 		'symbol' => 'ETH',
 		'currencies' => ['USD','EUR','GBP','JPY','RUR'],
 		'sidebar_news_title' => 'Ethereum Price News',
-		'post_tag' => 'ethereum-price'
+		'post_tag' => 'ethereum'
 	),
 	16 => array(
 		'symbol' => 'LTC',
@@ -37,7 +37,7 @@ $symbols = array(
 		'sidebar_news_title' => 'Ripple Price News',
 		'post_tag' => 'ripple'
 	),
-	20 => array(
+	21 => array(
 		'symbol' => 'XMR',
 		'currencies' => ['USD','EUR'],
 		'sidebar_news_title' => 'Monero Price News',
@@ -305,7 +305,7 @@ $currenciesRaw = $symbols[get_the_ID()]['currencies'];
 				<?php												
 				$args = array(
                     'post_type' => 'post',
-                    // 'tag' => $post_tag,
+                    'tag' => $post_tag,
                     'orderby' => 'date',
                     'order' => 'DESC',
 					'posts_per_page' => 3
@@ -337,6 +337,10 @@ $currenciesRaw = $symbols[get_the_ID()]['currencies'];
 						</div>
 						<?php
 					endwhile;
+				else:
+				?>
+				<p>No news available right now.</p>
+				<?php
 				endif;
 				
 				wp_reset_postdata();
