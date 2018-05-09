@@ -60,45 +60,6 @@ function cryptoville_events_load_contents(){
 					
 					$time = concat_date($from,$to);
 					
-
-					if(has_term('bitcoin_events','etype_tax')){
-						$btc.='<div style="margin-bottom:10px;margin-top:15px;"><a href="'.$eurl.'"><h4>'.get_the_title().'</h4></a></div>
-						<div style="display: inline-block; color: black; font-weight:600;">'.$time.'</div> <div style="display: inline-block;font-weight: 800;">|</div> <div style="display: inline-block; font-weight:600;">'.$add.'</div>
-						<div style="width: 100%; padding-top:15px;">
-						
-								'.get_the_content().'
-						
-						</div>
-						<hr>';
-					}else if(has_term('financial_events','etype_tax')){
-						$fin = '<div style="margin-bottom:10px;margin-top:15px;"><a href="'.$eurl.'"><h4>'.get_the_title().'</h4></a></div>
-						<div style="display: inline-block; color: black; font-weight:600;">'.$time.'</div> <div style="display: inline-block;font-weight: 800;">|</div> <div style="display: inline-block; font-weight:600;">'.$add.'</div>
-						<div style="width: 100%; padding-top:15px;">
-						
-								'.get_the_content().'
-						
-						</div>
-						<hr>';
-					}else if(has_term('technology_events','etype_tax')){
-						$tech = '<div style="margin-bottom:10px;margin-top:15px;"><a href="'.$eurl.'"><h4>'.get_the_title().'</h4></a></div>
-						<div style="display: inline-block; color: black; font-weight:600;">'.$time.'</div> <div style="display: inline-block;font-weight: 800;">|</div> <div style="display: inline-block; font-weight:600;">'.$add.'</div>
-						<div style="width: 100%; padding-top:15px;">
-						
-								'.get_the_content().'
-						
-						</div>
-						<hr>';
-					}
-
-					$all.='
-						<div style="margin-bottom:10px;margin-top:15px;"><a href="'.$eurl.'"><h4>'.get_the_title().'</h4></a></div>
-						<div style="display: inline-block; color: black; font-weight:600;">'.$time.'</div> <div style="display: inline-block;font-weight: 800;">|</div> <div style="display: inline-block; font-weight:600;">'.$add.'</div>
-						<div style="width: 100%; padding-top:15px;">
-						
-								'.get_the_content().'
-						
-						</div>
-						<hr>';
 					if(has_term('featured_events','etype_tax')){
 						$tempo .= '
 						<div class="col-lg-12" style="background-color: white;padding:15px;box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);margin-top: 15px;">
@@ -119,6 +80,49 @@ function cryptoville_events_load_contents(){
 						</div><hr>
 						';
 					}
+					
+					if(has_term('bitcoin_events','etype_tax')){
+						$btc.='<div style="margin-bottom:10px;margin-top:15px;"><a href="'.$eurl.'"><h4>'.get_the_title().'</h4></a></div>
+						<div style="display: inline-block; color: black; font-weight:600;">'.$time.'</div> <div style="display: inline-block;font-weight: 800;">|</div> <div style="display: inline-block; font-weight:600;">'.$add.'</div>
+						<div style="width: 100%; padding-top:15px;">
+						
+								'.get_the_content().'
+						
+						</div>
+						<hr>';
+					}
+					if(has_term('financial_events','etype_tax')){
+						$fin .= '<div style="margin-bottom:10px;margin-top:15px;"><a href="'.$eurl.'"><h4>'.get_the_title().'</h4></a></div>
+						<div style="display: inline-block; color: black; font-weight:600;">'.$time.'</div> <div style="display: inline-block;font-weight: 800;">|</div> <div style="display: inline-block; font-weight:600;">'.$add.'</div>
+						<div style="width: 100%; padding-top:15px;">
+						
+								'.get_the_content().'
+						
+						</div>
+						<hr>';
+					}
+
+					if(has_term('technology_events','etype_tax')){
+						$tech .= '<div style="margin-bottom:10px;margin-top:15px;"><a href="'.$eurl.'"><h4>'.get_the_title().'</h4></a></div>
+						<div style="display: inline-block; color: black; font-weight:600;">'.$time.'</div> <div style="display: inline-block;font-weight: 800;">|</div> <div style="display: inline-block; font-weight:600;">'.$add.'</div>
+						<div style="width: 100%; padding-top:15px;">
+						
+								'.get_the_content().'
+						
+						</div>
+						<hr>';
+					}
+
+					$all.='
+						<div style="margin-bottom:10px;margin-top:15px;"><a href="'.$eurl.'"><h4>'.get_the_title().'</h4></a></div>
+						<div style="display: inline-block; color: black; font-weight:600;">'.$time.'</div> <div style="display: inline-block;font-weight: 800;">|</div> <div style="display: inline-block; font-weight:600;">'.$add.'</div>
+						<div style="width: 100%; padding-top:15px;">
+						
+								'.get_the_content().'
+						
+						</div>
+						<hr>';
+					
 	                 ?>
 
 	            <?php
