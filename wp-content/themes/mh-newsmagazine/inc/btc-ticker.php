@@ -4,32 +4,28 @@
 outline: none !important;
 }
 
-.slick-prev{
+.slick-prev,.slick-next,.slick-dots{
 	display: none !important;
-}
-.slick-next{
-	display: none !important;
-}
-.slick-dots{
-
-	display:none !important;
-
 }
 
 .autoplay{
   text-align: center !important;
+  padding: 0;
+  padding-top:3px;
+  background:white;
+  z-index: -1;
 }
 
-
-@media screen and (max-width: 767px) {
-
-.latest-prices{
-  margin-top:7px !important;
-
+.crpyto-prices-label{
+  float:left;
+  width:auto;
+  background:#ff8400;
+  padding:8px 17px 8px 17px;
+  font-size:13px;
+  color:white;
+  font-weight:600;
 }
 
-
-}
 
 @media screen and (max-width: 450px) {
 
@@ -45,27 +41,21 @@ outline: none !important;
 }
 
 </style>
-<div style="margin-top:5px;" class="latest-prices">
-		
-		<div style="float:left;width:230px;">
-			
-			<label class="crpyto-prices-label" style="background:#ff8400;padding:8px 17px 8px 17px;font-size:13px;color:white;font-weight:600;">
+	
+	<div class="crpyto-prices-label">
 			LATEST CRYPTO PRICES  <i style="margin-left:10px;" class="fa fa-chevron-right"></i> 
-			</label>
+	</div>
 
-		</div>
-	<label class="autoplay" style="padding: 0;" >
-
+	<div class="autoplay">
 			 <div><span class="btc"></span> <span class="btc-change"></span></div>
 			 <div><span class="eth"></span> <span class="eth-change"></span></div>
 			 <div><span class="ltc"></span> <span class="ltc-change"></span></div>
 			 <div><span class="xrp"></span> <span class="xrp-change"></span></div>
 			 <div><span class="xmr"></span> <span class="xmr-change"></span></div>
 
-		</label>
+	</div>
 			
 
-</div>
 
 
 <script type="text/javascript">
@@ -193,13 +183,6 @@ outline: none !important;
     });
 
 //--------End of Js ---------------
-
-
-
-
-
-
-		
 
 
 </script>
