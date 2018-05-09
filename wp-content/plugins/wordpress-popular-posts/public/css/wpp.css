@@ -66,8 +66,8 @@ Use the following classes to style your popular posts list as you like.
 		.wpp-list>li:first-child img{
 			margin-bottom: 15px;
 			diplay: inline;
-			height: 250px;
-			width: auto;
+			width: 100%;
+			height: auto;
 		}
 
 		.wpp-list>li:first-child>.wpp-post-title{
