@@ -1,7 +1,9 @@
-<?php /* Template for displaying content of MH Posts Large widget */ ?>
+<?php /* Template for displaying content of MH Posts Large widget */ 
+$category = get_the_category();
+?>
 <article class="post-<?php the_ID(); ?> mh-posts-large-item">
 	<figure class="mh-posts-large-thumb">
-		<span class="display-tag"><?php the_category('');?></span>
+		<span class="display-tag"><?php  echo $category[0]->cat_name;?></span>
 		<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php
 			if (has_post_thumbnail()) {
 				the_post_thumbnail('mh-magazine-lite-content');
