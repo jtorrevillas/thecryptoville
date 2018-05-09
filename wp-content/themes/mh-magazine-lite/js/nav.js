@@ -29,10 +29,10 @@ function createNavDom(e) {
 }
 setTimeout(function() {
     createNavDom(document.querySelector("#menu-header-menu>li:nth-child(" + (sessionStorage.getItem("activeNav") || 2) + ")")), 2 != sessionStorage.getItem("activeNav") && sessionStorage.setItem("activeNav", 2), document.querySelectorAll("#menu-header-menu>li:not(:first-child)").forEach(function(e) {
-        e.addEventListener("mouseenter", function() {
+        e.childNodes[0].addEventListener("click", function(t) {
+            e.childNodes.length > 1 && t.preventDefault()
+        }), e.addEventListener("mouseenter", function() {
             createNavDom(this)
-        }), e.addEventListener("click", function(e) {
-            this.childNodes.legnth > 1 && e.preventDefault()
         })
     })
 }, 200);
