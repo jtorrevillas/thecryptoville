@@ -1,4 +1,14 @@
-<?php get_header(); ?>
+<?php
+get_header();
+$slug = get_category( get_query_var( 'cat' ) )->slug;
+$page = get_posts(
+    array(
+        'name'      => $slug,
+        'post_type' => 'page'
+    )
+);
+$content = $page[0]->post_content;
+?>
 <div class="mh-wrapper mh-clearfix">
 	<div id="main-content" class="mh-loop mh-content" role="main"><?php
 		mh_before_page_content();
@@ -10,7 +20,11 @@
 				} else {
 					the_archive_description('<div class="entry-content mh-loop-description">', '</div>');
 				} ?>
-			</header><?php
+			</header>
+			<div style="margin: 20px 0;">
+				<?=$content ?>
+			</div>
+			<?php
 			mh_magazine_lite_loop_layout();
 			mh_magazine_lite_pagination();
 		} else {
