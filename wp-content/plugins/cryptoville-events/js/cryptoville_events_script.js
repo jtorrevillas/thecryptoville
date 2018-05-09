@@ -1,6 +1,7 @@
 
 (function($){
 	$('#tabs').tabs();
+
 })(jQuery);
 
 // (function($){

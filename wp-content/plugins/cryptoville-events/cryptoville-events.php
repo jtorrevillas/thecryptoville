@@ -99,25 +99,27 @@ function cryptoville_events_load_contents(){
 						
 						</div>
 						<hr>';
-
-	                $tempo .= '
-					<div class="col-lg-12" style="background-color: white;padding-top:10px;box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);margin-top: 15px;">
-						<div class="col-lg-4" >
-							<img class="vc_img-placeholder vc_single_image-img" src="'.get_the_post_thumbnail_url().'" />
-						</div>
-						<div class="col-lg-8" style="display:inline-block;">
-							<div><a href="'.$eurl.'"><h4>'.get_the_title().'</h4></a></div>
-							<div style="display: inline-block; color: black; font-weight:600;margin-top:10px;">'.$time.'</div> 
-								<div style="display: inline-block;font-weight: 900;margin-top:10px;">|</div> 
-								<div style="color: #a1a1a1; display: inline-block; font-weight:600;margin-top:10px;">'.$add.'</div>
-							<div style="width: 100%; padding-top:15px;margin-top:10px;">
-
-									'.get_the_content().'
-
+					if(has_term('featured_events','etype_tax')){
+						$tempo .= '
+						<div class="col-lg-12" style="background-color: white;padding-top:10px;box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);margin-top: 15px;">
+							<div class="col-lg-4" >
+								<img class="vc_img-placeholder vc_single_image-img" src="'.get_the_post_thumbnail_url().'" />
 							</div>
-						</div>
-					</div><hr>
-					'; ?>
+							<div class="col-lg-8" style="display:inline-block;">
+								<div><a href="'.$eurl.'"><h4>'.get_the_title().'</h4></a></div>
+								<div style="display: inline-block; color: black; font-weight:600;margin-top:10px;">'.$time.'</div> 
+									<div style="display: inline-block;font-weight: 900;margin-top:10px;">|</div> 
+									<div style="color: #a1a1a1; display: inline-block; font-weight:600;margin-top:10px;">'.$add.'</div>
+								<div style="width: 100%; padding-top:15px;margin-top:10px;">
+
+										'.get_the_content().'
+
+								</div>
+							</div>
+						</div><hr>
+						';
+					}
+	                 ?>
 
 	            <?php
 	            endwhile;
@@ -130,23 +132,23 @@ function cryptoville_events_load_contents(){
 	     $tempo.='
 <div class="col-lg-12" style="margin:20px 0 0 0;padding:0;">
 	<div class="col-lg-8" style="padding:0;">
-		<div id="tabs">
-		  <ul>
-		    <li><a href="#tabs-1">All</a></li>
-		    <li><a href="#tabs-2">Bitcoin Events</a></li>
-		    <li><a href="#tabs-3">Financial Events</a></li>
-		    <li><a href="#tabs-4">Technology Events</a></li>
+		<div style="border:none;padding-left:0;" id="tabs">
+		  <ul style="background:none;border:none;">
+		    <li style="font-size:18px;border:none;"><a style="padding-left:0;" href="#tabs-1">All</a></li>
+		    <li style="font-size:18px;border:none;"><a style="padding-left:0;" href="#tabs-2">Bitcoin Events</a></li>
+		    <li style="font-size:18px;border:none;"><a style="padding-left:0;" href="#tabs-3">Financial Events</a></li>
+		    <li style="font-size:18px;border:none;"><a style="padding-left:0;" href="#tabs-4">Technology Events</a></li>
 		  </ul>
-		  <div id="tabs-1">
+		  <div style="padding-left:0;" id="tabs-1">
 		    '.$all.'
 		  </div>
-		  <div id="tabs-2">
+		  <div style="padding-left:0;" id="tabs-2">
 		    '.$btc.'
 		  </div>
-		  <div id="tabs-3">
+		  <div style="padding-left:0;" id="tabs-3">
 		    '.$fin.'
 		  </div>
-		  <div id="tabs-4">
+		  <div style="padding-left:0;" id="tabs-4">
 		   	'.$tech.'
 		  </div>
 		</div>
