@@ -657,3 +657,6 @@ div.wpcf7-response-output { margin: 20px 0 15px; }
 	#mh-mobile .mh-posts-stacked-overlay { border-right: none; }
 	#mh-mobile .mh-posts-stacked-title { font-size: 16px; padding: 2px 5px; }
 }
+
+.mh-navigation li{float:left;position:relative;font-size:11px;}
+.mh-social-icons ul li{display: inline-block;}
