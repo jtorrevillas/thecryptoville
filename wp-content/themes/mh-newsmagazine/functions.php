@@ -82,7 +82,6 @@ function mg_news_pagination_rewrite() {
 }
 add_action('init', 'mg_news_pagination_rewrite');
 
-
 ?>
 
 

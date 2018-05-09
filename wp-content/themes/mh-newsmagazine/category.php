@@ -13,6 +13,10 @@ $content = $page[0]->post_content;
 	<div id="main-content" class="mh-loop mh-content" role="main"><?php
 		mh_before_page_content();
 		if (have_posts()) { ?>
+			<nav class="mh-breadcrumbs">
+				<?php if ( function_exists('yoast_breadcrumb') ) 
+				{yoast_breadcrumb('<p id="breadcrumbs">','</p>');} ?>
+			</nav>
 			<header class="page-header"><?php
 				the_archive_title('<h1 class="page-title">', '</h1>');
 				if (is_author()) {
@@ -21,7 +25,7 @@ $content = $page[0]->post_content;
 					the_archive_description('<div class="entry-content mh-loop-description">', '</div>');
 				} ?>
 			</header>
-			<div style="margin: 20px 0;">
+			<div class="entry-content mh-loop-description" style="margin-bottom: 28px;">
 				<?=$content ?>
 			</div>
 			<?php
