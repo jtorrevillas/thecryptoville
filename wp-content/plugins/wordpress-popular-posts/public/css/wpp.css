@@ -12,6 +12,7 @@ Use the following classes to style your popular posts list as you like.
 
 /* UL - Popular Posts container styles */
 .wpp-list {	
+	font-family: "Adamina", serif;
 }
 
 	/* LI - Post container styles */
@@ -19,6 +20,7 @@ Use the following classes to style your popular posts list as you like.
 		overflow: hidden;
 		float: none;
 		clear: both;
+		margin: 10px 0;
 	}
 	
 	/* Styles for the popular post in view */
@@ -35,12 +37,19 @@ Use the following classes to style your popular posts list as you like.
 
 		/* Title styles */
 		.wpp-post-title {
+			font-weight: bold;
 		}
+
 		
 		/* Excerpt styles */
 		.wpp-excerpt {
+			display: none;
 		}
 		
+		.wpp-list>li:first-child>span.wpp-excerpt{
+			display: block;
+		}
+
 		/* Stats tag styles */
 		.wpp-meta, .post-stats {
 			display: block;
