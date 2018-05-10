@@ -86,6 +86,7 @@ class mh_magazine_lite_posts_focus_tagged extends WP_Widget {
 						if ($counter >= 2) { ?>
 							<article class="post-<?php the_ID(); ?> mh-posts-focus-item mh-posts-focus-item-small mh-clearfix">
 								<figure class="mh-posts-focus-thumb mh-posts-focus-thumb-small">
+									<?php $category = get_the_category(); ?>
 									<span class="display-tag"><?php echo $category[0]->cat_name;?></span>
 									<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php
 										if (has_post_thumbnail()) {
