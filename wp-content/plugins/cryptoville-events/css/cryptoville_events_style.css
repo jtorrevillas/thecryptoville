@@ -46,7 +46,7 @@
 }
 
 ::-webkit-scrollbar {
-display: none;
+/*display: none;*/
 }
 
 #cv-dropdown-countries ul li,

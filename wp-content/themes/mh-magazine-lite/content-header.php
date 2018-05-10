@@ -9,7 +9,7 @@
                     		$nav_items = wp_get_nav_menu_items(193);
                     		foreach($nav_items as $item):
                     			?>
-                    			<li class="menu-item"><a target="_blank" href="<?=$item->url ?>"><?=$item->post_title ?></a></li>
+                    			<li class="menu-item"><a target="_blank" href="<?=$item->url ?>"><?=$item->title ?></a></li>
                     			<?php
                     		endforeach;
                     	?>
