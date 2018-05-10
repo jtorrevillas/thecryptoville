@@ -318,7 +318,8 @@ class WPP_Output {
         if (
             /* $this->options['thumbnail']['active'] */ 
 			//&&
-			$this->wpp_image->can_create_thumbnails() 
+		//	$this->wpp_image->can_create_thumbnails() 
+1
         ) {
 
             // Create / get thumbnail from custom field
