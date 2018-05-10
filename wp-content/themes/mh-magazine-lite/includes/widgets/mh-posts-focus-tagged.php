@@ -31,7 +31,7 @@ class mh_magazine_lite_posts_focus_tagged extends WP_Widget {
 			$query_args['offset'] = $instance['offset'];
 		}
 		$widget_posts = new WP_Query($query_args);
-		$max_posts = $widget_posts->post_count;
+		$max_posts = 3;
         echo $args['before_widget'];
 			if ($widget_posts->have_posts()) :
 				$counter = 2;
