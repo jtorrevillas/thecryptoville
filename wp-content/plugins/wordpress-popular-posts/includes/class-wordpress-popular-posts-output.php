@@ -316,8 +316,9 @@ class WPP_Output {
         $thumbnail = '';
 
         if (
-            $this->options['thumbnail']['active'] 
-            && $this->wpp_image->can_create_thumbnails() 
+            /* $this->options['thumbnail']['active'] */ 
+			//&&
+			$this->wpp_image->can_create_thumbnails() 
         ) {
 
             // Create / get thumbnail from custom field
