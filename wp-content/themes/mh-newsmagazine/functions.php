@@ -24,6 +24,7 @@ function mh_newsmagazine_styles() {
     if (is_rtl()) {
 		wp_enqueue_style('mh-magazine-lite-rtl', get_template_directory_uri() . '/rtl.css', array(), $mh_magazine_lite_version);
 	}
+    wp_enqueue_style('mh-magazine-lite-preheader', get_template_directory_uri() . '/css/preheader.css', array(), $mh_magazine_lite_version);
 }
 add_action('wp_enqueue_scripts', 'mh_newsmagazine_styles');
 
@@ -66,6 +67,8 @@ function load_price_index_mandatory_scripts() {
 		echo "<script src='${includes_url}js/jquery/ui/datepicker.min.js'></script>";
 		wp_enqueue_style('price-index', get_template_directory_uri() . '/css/price-index.css');
 	}
+
+	wp_enqueue_style('font-awesome', 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 }
 add_action('wp_head', 'load_price_index_mandatory_scripts');
 

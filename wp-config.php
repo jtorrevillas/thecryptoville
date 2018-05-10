@@ -23,13 +23,13 @@
 define('DB_NAME', 'thecryptoville');
 
 /** MySQL database username */
-define('DB_USER', 'mysqldev');
+define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'mysqldev1');
+define('DB_PASSWORD', '');
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost');
+define('DB_HOST', '10.128.146.160');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8mb4');
