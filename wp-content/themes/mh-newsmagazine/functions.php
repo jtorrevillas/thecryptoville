@@ -66,6 +66,9 @@ function load_price_index_mandatory_scripts() {
 		echo "<script src='${includes_url}js/jquery/ui/datepicker.min.js'></script>";
 		wp_enqueue_style('price-index', get_template_directory_uri() . '/css/price-index.css');
 	}
+
+	wp_enqueue_style('preheader', get_template_directory_uri() . '/css/preheader.css');
+	wp_enqueue_style('font-awesome', 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 }
 add_action('wp_head', 'load_price_index_mandatory_scripts');
 

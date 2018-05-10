@@ -1,0 +1,131 @@
+
+.mh-navigation {
+    text-transform: uppercase
+}
+
+.mh-navigation li {
+    float: left;
+    position: relative;
+    font-size: 11px
+}
+
+.mh-navigation li:hover {
+    background: #2a2a2a
+}
+
+.mh-navigation li a {
+    display: block;
+    color: #fff
+}
+
+.mh-navigation ul li:hover>ul {
+    display: block;
+    background: #2a2a2a;
+    z-index: 9999
+}
+
+.mh-navigation ul ul {
+    display: none;
+    position: absolute
+}
+
+.mh-navigation ul ul li {
+    width: 100%;
+    min-width: 16em
+}
+
+.mh-navigation ul ul ul {
+    left: 100%;
+    top: 0
+}
+
+.mh-navigation .menu-item-has-children>a:after {
+    font-family: 'FontAwesome';
+    font-weight: 400;
+    line-height: 1;
+    content: '\f107';
+    margin-left: 5px
+}
+
+.mh-navigation .sub-menu .menu-item-has-children>a:after {
+    content: '\f105';
+    margin-left: 10px
+}
+
+.mh-navigation img {
+    vertical-align: inherit
+}
+
+.mh-header-nav-top li:hover a {
+    color: #fff
+}
+
+.mh-header-nav-bottom li a {
+    color: #000
+}
+
+.mh-header-nav-bottom li:hover a,.mh-wide-layout .mh-header-nav-bottom li a,.mh-wide-layout .mh-header-nav-bottom li:hover a {
+    color: #fff
+}
+
+.mh-header-nav {
+    overflow: visible
+}
+
+.mh-header-nav li a {
+    line-height: 35px;
+    padding: 0 20px
+}
+
+.mh-header-nav ul ul li {
+    width: 160px
+}
+
+.mh-navigation li,.mh-social-icons li a,.mh-social-icons li:hover .fa-mh-social:before,.flex-direction-nav a,.tagcloud a,.entry-tags li,.mh-share-button,#infinite-handle span,.mh-posts-stacked-overlay {
+    -webkit-transition: 0.25s ease-out;
+    -moz-transition: 0.25s ease-out;
+    transition: 0.25s ease-out
+}
+
+.mh-social-nav-top .fa-mh-social,.mh-social-nav-top li:hover .fa-mh-social {
+    color: #fff;
+}
+
+.mh-social-nav-bottom .fa-mh-social {
+    color: #000;
+}
+
+.mh-social-nav-bottom li:hover .fa-mh-social,.mh-wide-layout .mh-social-nav-bottom .fa-mh-social {
+    color: #fff;
+}
+
+.mh-social-nav {
+    float: right;
+}
+
+.mh-social-nav ul {
+    text-align: right;
+}
+
+.mh-social-nav li a {
+    display: block;
+    min-width: 35px;
+    font-size: 16px;
+    line-height: 35px;
+    text-align: center;
+    color: #FFF !important;
+}
+
+.mh-social-nav li a:hover {
+    background: #2a2a2a;
+}
+
+.mh-social-icons ul li {
+	display: inline-block;
+	margin-left: -4px;
+}
+
+.mh-social-icons ul {
+    list-style-type: none;
+    text-align: center;
+}
