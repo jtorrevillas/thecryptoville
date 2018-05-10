@@ -93,7 +93,7 @@ class WPP_Output {
 
                 $classes = "wpp-list";
 
-                /* if ( $this->options['thumbnail']['active'] ) */
+                if ( $this->options['thumbnail']['active'] )
                     $classes .= " wpp-list-with-thumbnails";
 
                 $this->output .= "\n" . "<ul class=\"{$classes}\">" . "\n";
@@ -316,9 +316,8 @@ class WPP_Output {
         $thumbnail = '';
 
         if (
-            /* $this->options['thumbnail']['active'] */ 
-			//&&
-			$this->wpp_image->can_create_thumbnails() 
+            $this->options['thumbnail']['active'] 
+            && $this->wpp_image->can_create_thumbnails() 
         ) {
 
             // Create / get thumbnail from custom field
