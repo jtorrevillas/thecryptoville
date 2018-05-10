@@ -32,6 +32,7 @@ class mh_magazine_lite_posts_focus_tagged extends WP_Widget {
 		}
 		$widget_posts = new WP_Query($query_args);
 		$max_posts = 3;
+		$countMe = 0;
         echo $args['before_widget'];
 			if ($widget_posts->have_posts()) :
 				$counter = 2;
@@ -52,7 +53,7 @@ class mh_magazine_lite_posts_focus_tagged extends WP_Widget {
 					echo $args['after_title'];
 				}
 				echo '<div class="mh-row mh-posts-focus-widget mh-clearfix">' . "\n";
-					while ($widget_posts->have_posts()) : $widget_posts->the_post();
+					while ($countMe < 5 && $widget_posts->have_posts()) : $widget_posts->the_post();
 						if ($counter === 1) { ?>
 							<div class="mh-col-3-4 mh-posts-focus-wrap<?php echo esc_attr($alignment); ?> mh-clearfix">
 								<div class="mh-col-3-4 mh-posts-focus-wrap mh-posts-focus-large mh-clearfix">
@@ -120,6 +121,7 @@ class mh_magazine_lite_posts_focus_tagged extends WP_Widget {
 							echo '</div>' . "\n";
 						}
 						$counter++;
+						$countMe++;
 					endwhile;
 					wp_reset_postdata();
 				echo '</div>' . "\n";
