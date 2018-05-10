@@ -31,7 +31,8 @@ class mh_magazine_lite_posts_focus_tagged extends WP_Widget {
 			$query_args['offset'] = $instance['offset'];
 		}
 		$widget_posts = new WP_Query($query_args);
-		$max_posts = $widget_posts->post_count;
+		$max_posts = 3;
+		$countMe = 0;
         echo $args['before_widget'];
 			if ($widget_posts->have_posts()) :
 				$counter = 2;
@@ -52,7 +53,7 @@ class mh_magazine_lite_posts_focus_tagged extends WP_Widget {
 					echo $args['after_title'];
 				}
 				echo '<div class="mh-row mh-posts-focus-widget mh-clearfix">' . "\n";
-					while ($widget_posts->have_posts()) : $widget_posts->the_post();
+					while ($countMe < 5 && $widget_posts->have_posts()) : $widget_posts->the_post();
 						if ($counter === 1) { ?>
 							<div class="mh-col-3-4 mh-posts-focus-wrap<?php echo esc_attr($alignment); ?> mh-clearfix">
 								<div class="mh-col-3-4 mh-posts-focus-wrap mh-posts-focus-large mh-clearfix">
@@ -86,6 +87,7 @@ class mh_magazine_lite_posts_focus_tagged extends WP_Widget {
 						if ($counter >= 2) { ?>
 							<article class="post-<?php the_ID(); ?> mh-posts-focus-item mh-posts-focus-item-small mh-clearfix">
 								<figure class="mh-posts-focus-thumb mh-posts-focus-thumb-small">
+									<?php $category = get_the_category(); ?>
 									<span class="display-tag"><?php echo $category[0]->cat_name;?></span>
 									<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php
 										if (has_post_thumbnail()) {
@@ -119,6 +121,7 @@ class mh_magazine_lite_posts_focus_tagged extends WP_Widget {
 							echo '</div>' . "\n";
 						}
 						$counter++;
+						$countMe++;
 					endwhile;
 					wp_reset_postdata();
 				echo '</div>' . "\n";
