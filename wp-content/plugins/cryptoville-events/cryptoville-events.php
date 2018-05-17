@@ -2,6 +2,10 @@
 /**
 *Plugin Name: Cryptoville Events
 *Description: A plugin that will load the events on the EVENTS Page
+Author: Philip Limpahan
+Author URI: #
+Text Domain: cryptoville-events
+Version: 1.0.1
 **/
 
 add_action( 'init', 'custom_post_types_events');

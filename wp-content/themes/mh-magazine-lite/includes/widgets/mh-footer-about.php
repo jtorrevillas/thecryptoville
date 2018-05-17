@@ -48,7 +48,9 @@ class mh_footer_about extends WP_Widget {
 			    <h4 class="mh-author-bio-title"><?php echo esc_html(apply_filters('widget_title', $instance['title'])); ?></h4>
 			    <figure class="mh-author-bio-avatar mh-author-bio-image-frame">
 			        <a href="https://demo.mhthemes.com/magazine4/author/mh-themes/"> 
-			        	<img src="<?php echo esc_html(apply_filters('widget_title', $instance['image_uri'])); ?>" width="120" height="120" alt="MH Themes" class="avatar avatar-120 wp-user-avatar wp-user-avatar-120 alignnone photo"> </a>
+			        	<!-- <img src="<?php echo esc_html(apply_filters('widget_title', $instance['image_uri'])); ?>" width="120" height="120" alt="MH Themes" class="avatar avatar-120 wp-user-avatar wp-user-avatar-120 alignnone photo"> -->
+			        	<img src="<?php echo get_template_directory_uri() . '/images/cryptoville-footer.jfif';?>" width="120" height="120" alt="MH Themes" class="avatar avatar-120 wp-user-avatar wp-user-avatar-120 alignnone photo">
+			        </a>
 			    </figure>
 			    <div class="mh-author-bio-text"><?php echo esc_html(apply_filters('widget_title', $instance['description'])); ?></div>
 			</div>

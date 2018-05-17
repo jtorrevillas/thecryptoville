@@ -359,8 +359,6 @@ if (!function_exists('mh_magazine_lite_footer_widgets')) {
 			$footer_class = 'mh-col-1-4 mh-home-wide ';
 		}
 		if ($footer_1 || $footer_2 || $footer_3 || $footer_4) {
-			echo '<footer class="mh-footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter">' . "\n";
-				echo '<div class="mh-container mh-container-inner mh-footer-widgets mh-row mh-clearfix">' . "\n";
 					if ($footer_1) {
 						echo '<div class="' . esc_attr($footer_class) . ' mh-footer-area mh-footer-1">' . "\n";
 							dynamic_sidebar('footer-1');
@@ -381,8 +379,6 @@ if (!function_exists('mh_magazine_lite_footer_widgets')) {
 							dynamic_sidebar('footer-4');
 						echo '</div>' . "\n";
 					}
-				echo '</div>' . "\n";
-			echo '</footer>' . "\n";
 		}
 	}
 }

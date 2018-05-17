@@ -50,11 +50,15 @@ outline: none !important;
 	</div>
 
 	<div class="autoplay">
-			 <div><span class="btc"></span> <span class="btc-change"></span></div>
 			 <div><span class="eth"></span> <span class="eth-change"></span></div>
 			 <div><span class="ltc"></span> <span class="ltc-change"></span></div>
 			 <div><span class="xrp"></span> <span class="xrp-change"></span></div>
-			 <div><span class="xmr"></span> <span class="xmr-change"></span></div>
+			 <div><span class="eos"></span> <span class="eos-change"></span></div>
+			 <div><span class="bch"></span> <span class="bch-change"></span></div>
+			 <div><span class="sec"></span> <span class="sec-change"></span></div>
+			 <div><span class="sev"></span> <span class="sev-change"></span></div>
+			 <div><span class="seb"></span> <span class="seb-change"></span></div>
+			 <div><span class="btc"></span> <span class="btc-change"></span></div>
 
 	</div>
 			
@@ -110,10 +114,10 @@ outline: none !important;
 //--------Ariel JS-------------
   document.addEventListener("DOMContentLoaded", function(event) { 
         
-      let url = 'https://api.coinmarketcap.com/v1/ticker/'  
+      let url = 'https://api.coinmarketcap.com/v1/ticker/?limit=10'  
       let ticker = new XMLHttpRequest();
       getPrices();
-      setInterval(getPrices, 5000)
+      setInterval(getPrices, 15000)
       ticker.onreadystatechange = function(){
         if (this.readyState == 4 && this.status == 200) {
                 // setInterval(gotValue(this), 5000);
@@ -135,29 +139,45 @@ outline: none !important;
         let ltc = new Object(); //litecoin
         let eth = new Object(); //ethereum
         let xrp = new Object(); //ripple
-        let xmr = new Object(); //monero
+        let eos = new Object(); //monero
+        let bch = new Object(); //btc cash
+        let sec = new Object(); //btc cash
+        let sev = new Object(); //btc cash
+        let seb = new Object(); //btc cash
         for(let i in a1){
             
-            switch(a1[i].id){
-                case 'bitcoin':
+            switch(a1[i].rank){
+                case '1':
                     btc = a1[i];
                     break;
-                case 'litecoin':
+                case '2':
                     ltc = a1[i];
                     break;
-                case 'ethereum':
+                case '3':
                     eth = a1[i];
                     break;
-                case 'ripple':
+                case '4':
                     xrp = a1[i];
                     break;
-                case 'monero':
-                    xmr = a1[i];
+                case '5':
+                    eos = a1[i];
+                    break;
+                case '6':
+                    bch = a1[i];
+                    break;
+                case '7':
+                    sec = a1[i];
+                    break;
+                case '8':
+                    sev = a1[i];
+                    break;
+                case '9':
+                    seb = a1[i];
                     break;
             }       
         }
 
-        jQuery(".btc").text(btc.symbol+" $"+parseFloat(btc.price_usd).toFixed(2));
+        		jQuery(".btc").text(btc.symbol+" $"+parseFloat(btc.price_usd).toFixed(2));
 				jQuery(".btc-change").text((parseFloat(btc.percent_change_1h) >=0 ? '+' + btc.percent_change_1h  + '%': btc.percent_change_1h  + '%'));
 				jQuery(".btc-change").css('color',parseFloat(jQuery(".btc-change").text()) >= 0 ? 'green' : 'red');
 
@@ -173,14 +193,25 @@ outline: none !important;
 				jQuery(".xrp-change").text((parseFloat(xrp.percent_change_1h) >=0 ? '+' + xrp.percent_change_1h  + '%': xrp.percent_change_1h  + '%'));
 				jQuery(".xrp-change").css('color',parseFloat(jQuery(".xrp-change").text()) >= 0 ? 'green' : 'red');
 
-				jQuery(".ltc").text(ltc.symbol+" $"+parseFloat(ltc.price_usd).toFixed(2));
-				jQuery(".ltc-change").text((parseFloat(ltc.percent_change_1h) >=0 ? '+' + ltc.percent_change_1h  + '%': ltc.percent_change_1h  + '%'));
-				jQuery(".ltc-change").css('color',parseFloat(jQuery(".ltc-change").text()) >= 0 ? 'green' : 'red');
+				jQuery(".eos").text(eos.symbol+" $"+parseFloat(eos.price_usd).toFixed(2));
+				jQuery(".eos-change").text((parseFloat(eos.percent_change_1h) >=0 ? '+' + eos.percent_change_1h  + '%': eos.percent_change_1h  + '%'));
+				jQuery(".eos-change").css('color',parseFloat(jQuery(".eos-change").text()) >= 0 ? 'green' : 'red');
 
+				jQuery(".bch").text(bch.symbol+" $"+parseFloat(bch.price_usd).toFixed(2));
+				jQuery(".bch-change").text((parseFloat(bch.percent_change_1h) >=0 ? '+' + bch.percent_change_1h  + '%': bch.percent_change_1h  + '%'));
+				jQuery(".bch-change").css('color',parseFloat(jQuery(".bch-change").text()) >= 0 ? 'green' : 'red');
 
-				jQuery(".xmr").text(xmr.symbol+" $"+parseFloat(xmr.price_usd).toFixed(2));
-				jQuery(".xmr-change").text((parseFloat(xmr.percent_change_1h) >=0 ? '+' + xmr.percent_change_1h  + '%': xmr.percent_change_1h  + '%'));
-				jQuery(".xmr-change").css('color',parseFloat(jQuery(".xmr-change").text()) >= 0 ? 'green' : 'red');
+				jQuery(".sec").text(sec.symbol+" $"+parseFloat(sec.price_usd).toFixed(2));
+				jQuery(".sec-change").text((parseFloat(sec.percent_change_1h) >=0 ? '+' + sec.percent_change_1h  + '%': sec.percent_change_1h  + '%'));
+				jQuery(".sec-change").css('color',parseFloat(jQuery(".sec-change").text()) >= 0 ? 'green' : 'red');
+
+				jQuery(".sev").text(sev.symbol+" $"+parseFloat(sev.price_usd).toFixed(2));
+				jQuery(".sev-change").text((parseFloat(sev.percent_change_1h) >=0 ? '+' + sev.percent_change_1h  + '%': sev.percent_change_1h  + '%'));
+				jQuery(".sev-change").css('color',parseFloat(jQuery(".sev-change").text()) >= 0 ? 'green' : 'red');
+
+				jQuery(".seb").text(seb.symbol+" $"+parseFloat(seb.price_usd).toFixed(2));
+				jQuery(".seb-change").text((parseFloat(seb.percent_change_1h) >=0 ? '+' + seb.percent_change_1h  + '%': seb.percent_change_1h  + '%'));
+				jQuery(".seb-change").css('color',parseFloat(jQuery(".seb-change").text()) >= 0 ? 'green' : 'red');
 
       }
     });

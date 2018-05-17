@@ -1,0 +1,36 @@
+5�Z<?php exit; ?>a:1:{s:7:"content";O:8:"stdClass":23:{s:2:"ID";s:3:"713";s:11:"post_author";s:1:"4";s:9:"post_date";s:19:"2018-05-02 13:48:56";s:13:"post_date_gmt";s:19:"2018-05-02 13:48:56";s:12:"post_content";s:6194:"<div class="penci-entry-content entry-content">
+
+A cryptocurrency is a digital or virtual currency designed to work as a medium of exchange. It uses cryptography to secure and verify transactions as well as to control the creation of new units of a particular cryptocurrency. Essentially, cryptocurrencies are limited entries in a database that no one can change unless specific conditions are fulfilled.
+<h2 id="history">History<a id="history" name="history"></a></h2>
+There have been many attempts at creating a digital currency during the 90s tech boom, with systems like <a href="https://en.bitcoinwiki.org/wiki/Flooz.com" target="_blank" rel="nofollow noopener">Flooz</a>, <a href="https://en.bitcoinwiki.org/wiki/Beenz.com" target="_blank" rel="nofollow noopener">Beenz</a> and DigiCash emerging on the market but inevitably failing. There were many different reasons for their failures, such as fraud, financial problems and even frictions between companies’ employees and their bosses.
+
+Notably, all of those systems utilized a Trusted Third Party approach, meaning that the companies behind them verified and facilitated the transactions. Due to the failures of these companies, the creation of a digital cash system was seen as a lost cause for a long while.
+
+Then, in early 2009, an anonymous programmer or a group of programmers under an alias <a href="https://en.bitcoinwiki.org/wiki/Satoshi_Nakamoto" target="_blank" rel="nofollow noopener">Satoshi Nakamoto</a> introduced Bitcoin. Satoshi described it as a ‘peer-to-peer electronic cash system.’ It is completely decentralized, meaning there are no servers involved and no central controlling authority. The concept closely resembles peer-to-peer networks for file sharing.
+
+<img title="A stranger in a red scarf and bitcoins around" src="https://lh4.googleusercontent.com/YrepqnHnU2TUpv_gSC8IVycx31SJbzZYJUWEjwxod6OpnT7Wqi8XICrlf6u_T6GpVWun6BzP_4NzN_CWrhBNqOX-MV5k00NW67UB2fXFV94C6NSItrbtSEp_9zfVyPJPlmq4_I2y" alt="A stranger in a red scarf and bitcoins around" />
+
+One of the most important problems that any payment network has to solve is double-spending. It is a fraudulent technique of spending the same amount twice. The traditional solution was a trusted third party – a central server – that kept records of the balances and transactions. However, this method always entailed an authority basically in control of your funds and with all your personal details on hand.
+
+In a decentralized network like Bitcoin, every single participant needs to do this job. This is done via the Blockchain – a public ledger of all transaction that ever happened within the network, available to everyone. Therefore, everyone in the network can see every account’s balance.
+
+Every transaction is a file that consists of the sender’s and recipient’s public keys (wallet addresses) and the amount of coins transferred. The transaction also needs to be signed off by the sender with their private key. All of this is just basic cryptography. Eventually, the transaction is broadcasted in the network, but it needs to be confirmed first.
+
+Within a <a href="https://en.bitcoinwiki.org/wiki/Cryptocurrency" target="_blank" rel="nofollow noopener">cryptocurrency</a> network, only miners can confirm transactions by solving a cryptographic puzzle. They take transactions, mark them as legitimate and spread them across the network. Afterwards, every node of the network adds it to its database. Once the transaction is confirmed it becomes unforgeable and irreversible and a miner receives a reward, plus the transaction fees.
+
+Essentially, any cryptocurrency network is based on the absolute consensus of all the participants regarding the legitimacy of balances and transactions. If nodes of the network disagree on a single balance, the system would basically break. However, there are a lot of rules pre-built and programmed into the network that prevents this from happening.
+
+Cryptocurrencies are so called because the consensus-keeping process is ensured with strong cryptography. This, along with aforementioned factors, makes third parties and blind trust as a concept completely redundant.
+<h2 id="what-can-you-do-with-cryptocurrency">What can you do with cryptocurrency<a id="what-can-you-do-with-cryptocurrency" name="what-can-you-do-with-cryptocurrency"></a></h2>
+<h3 id="buy-goods">Buy goods<a id="buy-goods" name="buy-goods"></a></h3>
+<p dir="ltr">In the past, trying to find a merchant that accepts cryptocurrency was extremely difficult, if not impossible. These days, however, the situation is completely different.</p>
+There are a lot of merchants – both online and offline – that accept Bitcoin as the form of payment. They range from massive online retailers like <a href="http://www.overstock.com/" target="_blank" rel="nofollow noopener">Overstock</a> and <a href="https://www.newegg.com/" target="_blank" rel="nofollow noopener">Newegg</a> to small local shops, bars and restaurants. Bitcoins can be used to pay for hotels, flights, jewelery, apps, computer parts and even a college degree.
+
+Other digital currencies like Litecoin, Ripple, Ethereum and so on aren’t accepted as widely just yet. Things are changing for the better though, with Apple having <a href="https://cointelegraph.com/news/dash-price-soars-after-getting-accepted-on-app-store" target="_blank" rel="noopener">authorized</a> at least 10 different cryptocurrencies as a viable form of payment on App Store.
+
+Of course, users of cryptocurrencies other than Bitcoin can always exchange their coins for BTCs. Moreover, there are Gift Card selling websites like <a href="https://giftoff.com/" target="_blank" rel="nofollow noopener">Gift Off</a>, which accepts around 20 different cryptocurrencies. Through gift cards, you can essentially buy anything with a cryptocurrency.
+
+Finally, there are marketplaces like <a href="https://bitify.com/" target="_blank" rel="nofollow noopener">Bitify</a> and <a href="https://www.openbazaar.org/" target="_blank" rel="nofollow noopener">OpenBazaar</a> that only accept cryptocurrencies.
+
+</div>
+<footer class="penci-entry-footer"></footer>";s:10:"post_title";s:43:"What is Cryptocurrency. Guide for Beginners";s:12:"post_excerpt";s:0:"";s:11:"post_status";s:7:"publish";s:14:"comment_status";s:4:"open";s:11:"ping_status";s:4:"open";s:13:"post_password";s:0:"";s:9:"post_name";s:44:"what-is-cryptocurrency-guide-for-beginners-2";s:7:"to_ping";s:0:"";s:6:"pinged";s:0:"";s:13:"post_modified";s:19:"2018-05-10 10:26:15";s:17:"post_modified_gmt";s:19:"2018-05-10 10:26:15";s:21:"post_content_filtered";s:0:"";s:11:"post_parent";s:1:"0";s:4:"guid";s:38:"http://localhost/thecryptoville/?p=713";s:10:"menu_order";s:1:"0";s:9:"post_type";s:4:"post";s:14:"post_mime_type";s:0:"";s:13:"comment_count";s:1:"0";}}

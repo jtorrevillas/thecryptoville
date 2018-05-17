@@ -1,0 +1,19 @@
+5�Z<?php exit; ?>a:1:{s:7:"content";O:8:"stdClass":23:{s:2:"ID";s:3:"695";s:11:"post_author";s:1:"3";s:9:"post_date";s:19:"2018-05-08 10:42:31";s:13:"post_date_gmt";s:19:"2018-05-08 10:42:31";s:12:"post_content";s:2835:"Monero, the 11th largest cryptocurrency with a market capitalization of nearly $3.6 billion, jumped more than 12 in the last 24 hours as its price rose to $233.74.
+
+<img class="aligncenter wp-image-135124 size-full" src="https://248qms3nhmvl15d4ne1i4pxl-wpengine.netdna-ssl.com/wp-content/uploads/2018/04/Monero-1904.png" sizes="(max-width: 687px) 100vw, 687px" srcset="https://248qms3nhmvl15d4ne1i4pxl-wpengine.netdna-ssl.com/wp-content/uploads/2018/04/Monero-1904.png 687w, https://248qms3nhmvl15d4ne1i4pxl-wpengine.netdna-ssl.com/wp-content/uploads/2018/04/Monero-1904-300x243.png 300w, https://248qms3nhmvl15d4ne1i4pxl-wpengine.netdna-ssl.com/wp-content/uploads/2018/04/Monero-1904-640x518.png 640w, https://248qms3nhmvl15d4ne1i4pxl-wpengine.netdna-ssl.com/wp-content/uploads/2018/04/Monero-1904-360x291.png 360w" alt="" width="687" height="556" data-size="687x556" />
+
+Monero, a privacy-centric currency, trails 10th place IOTA, which has a market cap of more than $4 billion.
+<h2>Recovering $1 Billion</h2>
+Monero has gained $1 billion this week, having begun the week at $167.78 with a market capitalization of $2.66 billion.
+
+The cryptocurrency has almost recovered the capitalization it gave up over the past month; the price reached $233.53 on March 21 with a market cap of $3.732 billion. It still has a way to go, however, to reclaim the $389.03 price on Jan. 20, when its market cap topped $6.078 billion.
+
+The price remains well above the $40 to $50 range it was in last year. Monero was among a host of cryptocurrencies, including bitcoin, that allowed the market to climb to $334 billion, eyeing a move to $350 billion. Bitcoin rebounded to $8,100 over the past 24 hours after it dropped to $7,850 on April 17.
+<h2>Hard Fork Brings Improvement</h2>
+<a href="https://www.ccn.com/monero-hard-forks-to-maintain-asic-resistance-but-classic-hopes-to-spoil-the-party/">Monero activated its semi-annual hard fork on April 6</a>, bringing a host of new upgrades. One particular Monero upgrade, though, threatens to split the network into two competing chains.
+
+Monero earlier this year announced its intention to <a href="https://www.ccn.com/monero-sticks-to-anti-asic-guns-with-emergency-software-update/">update its instance of the Cryptonight Proof-of-Work (PoW) mining algorithm</a> at regular intervals to prevent mining hardware manufacturers from developing Monero-compatible Application Specific Integrated Circuit (ASIC) miners, as critics allege that these devices lead to mining centralization and threaten the network’s health.
+
+ASIC chips maximize efficiency to such an extent that it becomes no longer profitable to mine with GPU miners, whose chips are general-purpose and use for everything from PC gaming to searching for extraterrestrial life.
+
+<em>Featured image from Shutterstock.</em>";s:10:"post_title";s:54:"Monero Price Jumps 12% as Crypto Market Posts Recovery";s:12:"post_excerpt";s:0:"";s:11:"post_status";s:7:"publish";s:14:"comment_status";s:4:"open";s:11:"ping_status";s:4:"open";s:13:"post_password";s:0:"";s:9:"post_name";s:53:"monero-price-jumps-12-as-crypto-market-posts-recovery";s:7:"to_ping";s:0:"";s:6:"pinged";s:0:"";s:13:"post_modified";s:19:"2018-05-10 02:45:30";s:17:"post_modified_gmt";s:19:"2018-05-10 02:45:30";s:21:"post_content_filtered";s:0:"";s:11:"post_parent";s:1:"0";s:4:"guid";s:38:"http://localhost/thecryptoville/?p=695";s:10:"menu_order";s:1:"0";s:9:"post_type";s:4:"post";s:14:"post_mime_type";s:0:"";s:13:"comment_count";s:1:"0";}}

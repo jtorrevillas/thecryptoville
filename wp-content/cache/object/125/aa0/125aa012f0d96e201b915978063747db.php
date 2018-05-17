@@ -1,0 +1,7 @@
+5ýZ<?php exit; ?>a:1:{s:7:"content";O:8:"stdClass":24:{s:2:"ID";i:291;s:11:"post_author";s:1:"1";s:9:"post_date";s:19:"2018-05-09 03:31:06";s:13:"post_date_gmt";s:19:"2018-05-09 03:31:06";s:12:"post_content";s:559:"<img class="size-mh-magazine-lite-content wp-image-292 alignnone" style="width: 100%;" src="http://localhost/thecryptoville/wp-content/uploads/2018/05/superman-678x381.jpg" alt="" width="678" height="381" />
+<p style="text-align: left;">Got a hot story idea? Send it in!</p>
+Or maybe you already have a story and want to get it published on Cointelegraph. Send it in!
+
+You are working in a bitcoin or blockchain company and want to share an inside with us â€“ let us know. We will respect your anonymity.
+
+[contact-form-7 id="310" title="submit-a-post"]";s:10:"post_title";s:29:"Submit a Story or Story Idea!";s:12:"post_excerpt";s:0:"";s:11:"post_status";s:7:"publish";s:14:"comment_status";s:6:"closed";s:11:"ping_status";s:6:"closed";s:13:"post_password";s:0:"";s:9:"post_name";s:13:"submit-a-post";s:7:"to_ping";s:0:"";s:6:"pinged";s:0:"";s:13:"post_modified";s:19:"2018-05-09 03:41:28";s:17:"post_modified_gmt";s:19:"2018-05-09 03:41:28";s:21:"post_content_filtered";s:0:"";s:11:"post_parent";i:0;s:4:"guid";s:44:"http://localhost/thecryptoville/?page_id=291";s:10:"menu_order";i:0;s:9:"post_type";s:4:"page";s:14:"post_mime_type";s:0:"";s:13:"comment_count";s:1:"0";s:6:"filter";s:3:"raw";}}

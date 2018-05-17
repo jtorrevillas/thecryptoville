@@ -1,0 +1,1 @@
+ôıZ<?php exit; ?>a:1:{s:7:"content";s:190:"O:8:"stdClass":4:{s:12:"last_checked";i:1526526099;s:7:"checked";a:2:{s:16:"mh-magazine-lite";s:5:"2.7.9";s:15:"mh-newsmagazine";s:5:"1.1.3";}s:8:"response";a:0:{}s:12:"translations";a:0:{}}";}

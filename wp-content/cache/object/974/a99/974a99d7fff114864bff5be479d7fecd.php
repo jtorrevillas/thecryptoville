@@ -1,0 +1,1 @@
+%ýZ<?php exit; ?>a:1:{s:7:"content";a:10:{s:6:"WPLANG";b:1;s:28:"wpseo_license_server_version";b:1;s:24:"mh_magazine_lite_options";b:1;s:19:"wpseo_flush_rewrite";b:1;s:11:"db_upgraded";b:1;s:21:"dismissed_update_core";b:1;s:12:"wpseo_onpage";b:1;s:9:"wpseo-gsc";b:1;s:23:"auto_core_update_failed";b:1;s:30:"w3tc_nr_frontend_response_time";b:1;}}

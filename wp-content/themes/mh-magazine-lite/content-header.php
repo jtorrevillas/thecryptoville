@@ -56,7 +56,15 @@
 </div>
 <header class="mh-header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
 	<div class="mh-container mh-container-inner mh-row mh-clearfix">
-		<?php mh_magazine_lite_custom_header(); ?>
+		<div class="mh-custom-header mh-clearfix">
+                <div class="mh-site-identity">
+                    <div class="mh-site-logo" role="banner" itemscope="itemscope" itemtype="http://schema.org/Brand">
+                        <a href="http://18.196.41.175/tcv/" class="custom-logo-link" rel="home" itemprop="url">
+                            <img src="<?php echo get_template_directory_uri() . '/images/cryptoville-logo.jfif'; ?>"  class="custom-logo" alt="TheCryptoVille" itemprop="logo" width="838" height="196">
+                        </a>
+                    </div>
+                </div>
+            </div>
 	</div>
 	<div class="mh-main-nav-wrap">
 		<nav class="mh-navigation mh-main-nav mh-container mh-container-inner mh-clearfix" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">

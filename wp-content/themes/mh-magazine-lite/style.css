@@ -670,6 +670,6 @@ div.wpcf7-response-output { margin: 20px 0 15px; }
 .mh-author-bio-title{	    padding: 0 0 5px;    margin-bottom: 25px;    border-bottom: 3px solid #e64946;    text-transform: uppercase;}
 .mh-footer-widget .mh-author-bio-title, .mh-footer-widget .mh-author-bio-image-frame{border-color:white;}
 .mh-author-bio-avatar{margin: 0 auto;}
-.mh-author-bio-image-frame{	border: 10px solid #e64946;    -webkit-border-radius: 50%;    -moz-border-radius: 50%;    border-radius: 50%;    overflow: hidden;}
+.mh-author-bio-image-frame{	/*border: 10px solid #e64946;    -webkit-border-radius: 50%;    -moz-border-radius: 50%;    border-radius: 50%;    overflow: hidden;*/}
 .mh-footer-widget .mh-author-bio-text{font-size: 13px;    font-size: .8125rem;    color: #fff;}
 .mh-author-bio-text{    font-size: 14px;    font-size: .875rem;    color: #fff;    margin-top: 25px;}
